@@ -23,7 +23,7 @@ showToc: false
 
 Bitcoin SV 正在成为比特币应有的样子，愿这条路上你也能一起前行。
 
-[@imcoddy](https://github.com/imcoddy)
+邱少贤[@imcoddy](https://github.com/imcoddy)
 
 记于 20190730
 
