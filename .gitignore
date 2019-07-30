@@ -1,0 +1,15 @@
+.env
+.metadata
+.DS_Store
+
+_book
+build
+node_modules
+tmp
+
+*.[oa]
+*.swp
+*.swo
+*.bak
+*.log
+*.*~

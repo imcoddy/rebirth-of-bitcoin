@@ -1,0 +1,39 @@
+{
+	"author": "imcoddy <imcoddy@gmail.com>",
+	"description": "本书旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币(BSV)的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「创世纪」升级计划的到来。",
+	"extension": null,
+	"generator": "site",
+	"links": {
+		"sharing": {
+			"all": null,
+			"facebook": null,
+			"google": null,
+			"twitter": null,
+			"weibo": null
+		}
+	},
+	"output": null,
+	"pdf": {
+		"fontSize": 12,
+		"footerTemplate": null,
+		"headerTemplate": null,
+		"margin": {
+			"bottom": 36,
+			"left": 62,
+			"right": 62,
+			"top": 36
+		},
+		"pageNumbers": false,
+		"paperSize": "a4"
+	},
+	"plugins": ["page-toc"],
+	"pluginsConfig": {
+		"page-toc": {
+			"selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+			"position": "before-first",
+			"showByDefault": false
+		}
+	},
+	"title": "比特币重生：重返创世纪",
+	"variables": {}
+}
