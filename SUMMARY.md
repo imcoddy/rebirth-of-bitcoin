@@ -32,7 +32,7 @@
 * [比特币区块](chapter-block/README.md)
     * [区块的结构](chapter-block/block-structure.md)
     * [区块确认](chapter-block/block-confirmation.md)
-    * [零确认的意义](chapter-block/importance-of-zero-conf.md)
+    * [零确认的重要性](chapter-block/importance-of-zero-conf.md)
 * [比特币脚本系统](chapter-scripting/README.md)
     * [比特币脚本系统](chapter-scripting/overview.md)
     * [比特币的图灵完备性](chapter-scripting/turing-completeness.md)
@@ -101,4 +101,3 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
-
