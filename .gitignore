@@ -13,3 +13,7 @@ tmp
 *.bak
 *.log
 *.*~
+
+*.epub
+*.mobi
+*.pdf
