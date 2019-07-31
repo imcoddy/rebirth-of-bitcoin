@@ -1,9 +1,6 @@
----
-showToc: false
----
 # Rebirth of Bitcoin: Back to Genesis
-## 「比特币重生：重返创世纪」计划
-![bitcon-forks](images/bitcoin-forks.png)
+
+![「比特币重生：重返创世纪」计划](images/bitcoin-forks.png)
 
 比特币诞生至今，已经过了十个年头。在此期间，因比特币几年的[扩容争议](http://1bsv.cn/%e6%af%94%e7%89%b9%e5%b8%81%e6%89%a9%e5%ae%b9%e7%ba%b7%e4%ba%89/)无果，比特币分叉为  Bitcoin Coin 和 Bitcoin Cash，随后又分叉为 Bitcoin ABC 和 Bitcoin SV。
 
