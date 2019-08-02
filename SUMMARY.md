@@ -58,6 +58,7 @@
     * [节点的专业化](chapter-mining/professionalize.md)
     * [小世界网络](chapter-mining/small-world-network.md)
     * [竞争的本质](chapter-mining/competition.md)
+    * [分叉与共识](chapter-mining/forks-and-consensus.md)
     * [孤块，钢与铁](chapter-mining/orphan-block.md)
     * [去中心化的迷思](chapter-mining/myths-of-decentralization.md)
 * [比特币安全](chapter-security/README.md)
