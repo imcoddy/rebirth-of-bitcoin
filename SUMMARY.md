@@ -21,6 +21,7 @@
     * [比特币私钥](chapter-transaction/private-key.md)
     * [比特币公钥](chapter-transaction/public-key.md)
     * [比特币地址](chapter-transaction/address.md)
+    * [未花费交易输出](chapter-transaction/utxo.md)
     * [比特币签名](chapter-transaction/signature.md)
         * [P2PKH](chapter-transaction/p2pkh.md)
         * [P2SH](chapter-transaction/p2sh.md)
@@ -101,3 +102,4 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
+
