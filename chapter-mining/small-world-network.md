@@ -20,7 +20,7 @@
 
 ![Centralised-decentralised-and-distributed-networks](http://i1375.photobucket.com/albums/ag455/imcoddy/bitcoin/Centralised-decentralised-and-distributed-networks-Baran-in-Barabasi-2003_zpsxnpqulzx.png)
 
-作为一个去中心化的网络，比特币网络很容易让人认为它是处于上图中第二和第三种状态之间。这样的网络结构也被称为 [Mesh 网络](https://zh.wikipedia.org/wiki/%E7%BD%91%E7%8A%B6%E7%BD%91%E7%BB%9C)。在这种状态下，平均每十分钟一个区块要传播至全网，需要通过若干节点的几跳（相邻节点的一次传递叫一个跳）的传递，才能使得区块从网络的一端传递至另一端。
+作为一个去中心化的网络，比特币网络很容易让人认为它是处于上图中第二和第三种状态之间。这样的网络结构也被称为 [Mesh 网络](https://zh.wikipedia.org/wiki/% E7% BD%91% E7%8A% B6% E7% BD%91% E7% BB%9C)。在这种状态下，平均每十分钟一个区块要传播至全网，需要通过若干节点的几跳（相邻节点的一次传递叫一个跳）的传递，才能使得区块从网络的一端传递至另一端。
 
 而在实际情况中，节点会倾向于与连接性良好的其它节点保持紧密关联，以便能尽快地接收交易信息以及将自己打包的区块传递出去。这使得节点在加入比特币网络后，会尽量与更多节点直接关联，从而让整个比特币网络慢慢变成了一张近完全图（Near Completed Graph)。下面的视频，生动地显示了新节点不断加入比特币网络后整体变得更加紧密的过程。
 

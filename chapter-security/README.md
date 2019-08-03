@@ -6,8 +6,8 @@
 
 - 选择和使用钱包软件时需要注意什么
 - 如何安全的生成助记词
-- 使用**热钱包**在日常生活中收发比特币
-- 使用**冷钱包**和**观察钱包**来满足更强的安全性需求
+- 使用 ** 热钱包 ** 在日常生活中收发比特币
+- 使用 ** 冷钱包 ** 和 ** 观察钱包 ** 来满足更强的安全性需求
 - 硬件钱包
 
 掌握这些内容，能让你在安全存储私钥的同时也可以方便的使用比特币。
@@ -27,10 +27,10 @@
 
 按按私钥是否联网，可以分为：
 
-- 冷钱包，钱包中的私钥在**任何时候**都不曾接触网络
+- 冷钱包，钱包中的私钥在 ** 任何时候 ** 都不曾接触网络
 - 热钱包，私钥直接接触网络
 
-在比特币系统中，私钥意味着一切。HD 钱包中的私钥都从种子（Seed）计算而来，种子从助记词（Mnemonic）和密语（Passphrase）计算而来，如果你指定了密语，在备份 HD 钱包时需要同时记录这两者。为了避免计算机和手机病毒窃取信息，**你不应该使用任何电子设备记录助记词**，一般都采用纸笔抄录的方式备份，或记录在更坚固的介质上。同时直接将密语记在脑子里，作为保证钱包安全的第二因素，在助记词意外泄露后避免资金损失。
+在比特币系统中，私钥意味着一切。HD 钱包中的私钥都从种子（Seed）计算而来，种子从助记词（Mnemonic）和密语（Passphrase）计算而来，如果你指定了密语，在备份 HD 钱包时需要同时记录这两者。为了避免计算机和手机病毒窃取信息，** 你不应该使用任何电子设备记录助记词 **，一般都采用纸笔抄录的方式备份，或记录在更坚固的介质上。同时直接将密语记在脑子里，作为保证钱包安全的第二因素，在助记词意外泄露后避免资金损失。
 
 <div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/CsI3Kod.png)</div>
 
@@ -44,9 +44,9 @@
 
 在接收比特币时，需要提供收款地址。HD 钱包在生成地址时，根据路径衍生方式的不同，需要访问扩展私钥或扩展公钥。
 
-在支付比特币时，需要依次完成创建交易、签名交易和广播交易三个**相互独立**的步骤。
+在支付比特币时，需要依次完成创建交易、签名交易和广播交易三个 ** 相互独立 ** 的步骤。
 
-符合 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)、[BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 和 [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) 标准的 HD 钱包，会使用形如`m/44'/236'/0'`的衍生路径，使用路径`m/44'/236'/0'/0/x`作为收款地址，使用路径`m/44'/236'/0'/1/x`作为找零地址，所以对 HD 钱包而言：
+符合 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)、[BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 和 [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) 标准的 HD 钱包，会使用形如 `m/44'/236'/0'` 的衍生路径，使用路径 `m/44'/236'/0'/0/x` 作为收款地址，使用路径 `m/44'/236'/0'/1/x` 作为找零地址，所以对 HD 钱包而言：
 
 - 只需要访问扩展公钥（xpub），就可以生成地址（收款地址和找零地址）
 - 需要访问扩展私钥（xprv），才可以对交易签名
@@ -58,9 +58,9 @@
 签名交易 | ✖ | ✔ |
 广播交易 | ✔ | ✖ |
 
-显而易见，从头初始化一个 HD 钱包，或从助记词、密语和衍生路径恢复 HD 钱包，或直接导入扩展私钥（xprv）恢复 HD 钱包，才可以支付比特币。直接导入扩展公钥（xpub）恢复 HD 钱包，意味着你只能生成地址接收而无法签名交易支付比特币，这样的钱包称为**观察钱包**，观察钱包中没有私钥。
+显而易见，从头初始化一个 HD 钱包，或从助记词、密语和衍生路径恢复 HD 钱包，或直接导入扩展私钥（xprv）恢复 HD 钱包，才可以支付比特币。直接导入扩展公钥（xpub）恢复 HD 钱包，意味着你只能生成地址接收而无法签名交易支付比特币，这样的钱包称为 ** 观察钱包 **，观察钱包中没有私钥。
 
-你可以在**一直离线**的电脑或手机上生成冷钱包，只用来对交易签名，这台设备一直处于离线状态，所以你不用特别担心私钥通过网络泄露。联网的观察钱包可以实时从网络同步 UTXO 数据，更新钱包“余额”，你可以在观察钱包中生成地址接收比特币，组合 UTXO 创建未签名的交易。
+你可以在 ** 一直离线 ** 的电脑或手机上生成冷钱包，只用来对交易签名，这台设备一直处于离线状态，所以你不用特别担心私钥通过网络泄露。联网的观察钱包可以实时从网络同步 UTXO 数据，更新钱包 “余额”，你可以在观察钱包中生成地址接收比特币，组合 UTXO 创建未签名的交易。
 
 在需要支付比特币时：
 
@@ -72,7 +72,7 @@
 
 整个发送过程冷钱包一直处于离线状态，私钥也没有接触网络。
 
-一个要注意的点是，在保障钱包安全性的同时，不应完全忽略使用体验。在对安全性要求不那么高的场景，例如用于日常支付的零钱钱包，为了方便完全可以直接使用你信赖的热钱包软件而不用过于担心，就像你不太担心丢失钱包而损失银行存款一样。对于大额比特币的“存储”，可以考虑使用冷钱包方案，牺牲一些使用体验换来更高的安全保障。
+一个要注意的点是，在保障钱包安全性的同时，不应完全忽略使用体验。在对安全性要求不那么高的场景，例如用于日常支付的零钱钱包，为了方便完全可以直接使用你信赖的热钱包软件而不用过于担心，就像你不太担心丢失钱包而损失银行存款一样。对于大额比特币的 “存储”，可以考虑使用冷钱包方案，牺牲一些使用体验换来更高的安全保障。
 
 另一个要注意的点是，你应该只从软件官方网站和手机官方应用商店这样的可信渠道下载钱包。如果可以的话，记得验证安装包的哈希和 GPG 签名。
 
@@ -80,7 +80,7 @@
 
 # 热钱包
 
-由于热钱包的私钥直接接触网络，所以安全性上会稍显不足，但热钱包简单方便，将其作为日常使用的零钱钱包，再合适不过。你可以根据自己的喜好，在官网的[钱包推荐列表](https://bitcoinsv.io/services/wallets-and-exchanges/)中挑选。
+由于热钱包的私钥直接接触网络，所以安全性上会稍显不足，但热钱包简单方便，将其作为日常使用的零钱钱包，再合适不过。你可以根据自己的喜好，在官网的 [钱包推荐列表](https://bitcoinsv.io/services/wallets-and-exchanges/) 中挑选。
 
 <div style="width: 65%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/xlK6Seo.png)</div>
 
@@ -89,7 +89,7 @@
 - [打点钱包](https://www.ddpurse.com/)，轻量易用的手机钱包，无需下载 App，关注官方微信公众号便可直接使用
 - [Simply Cash](https://simply.cash/)，简洁优雅的手机钱包，支持冷钱包功能
 - [MoneyButton](https://moneybutton.com/)，操作体验优异的在线钱包
-- [IFWallet](https://www.ifwallet.com/)，简单好用的 HD + 托管 “双核”手机钱包
+- [IFWallet](https://www.ifwallet.com/)，简单好用的 HD + 托管 “双核” 手机钱包
 - [ElectrumSV](https://electrumsv.io/)，功能强大的桌面钱包，支持冷钱包功能，兼容主流的硬件钱包
 
 以打点钱包为例。
@@ -103,19 +103,19 @@
 - 记得备份助记词
 <div style="width: 20%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/4rJACZr.png)</div>
 
-你可以通过下面的视频了解打点钱包的更多细节。视频由热心网友“简美小视频”制作，非常不错，分享给你。
+你可以通过下面的视频了解打点钱包的更多细节。视频由热心网友 “简美小视频” 制作，非常不错，分享给你。
 
 <video src="https://aaron67-public.oss-cn-beijing.aliyuncs.com/ddpurse-tutorial.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;"></video>
 
 # 冷钱包
 
-在“存储”大额比特币时需要处处小心谨慎，避免私钥泄露。
+在 “存储” 大额比特币时需要处处小心谨慎，避免私钥泄露。
 
 ## 安全的生成助记词
 
 如果你担心钱包软件在生成助记词时作恶，可以选择自己生成，通过导入助记词的方式在离线设备上恢复冷钱包。
 
-https://iancoleman.io/bip39/ 是一个颇受欢迎的工具，源码开源在 [GitHub](https://github.com/iancoleman/bip39) 上。你可以将项目代码下载下来，拷贝到**离线电脑**上运行，避免信息泄露。选择要生成的助记词个数，每点一下“GENERATE”按钮就可以生成一组新的助记词。
+https://iancoleman.io/bip39/ 是一个颇受欢迎的工具，源码开源在 [GitHub](https://github.com/iancoleman/bip39) 上。你可以将项目代码下载下来，拷贝到 ** 离线电脑 ** 上运行，避免信息泄露。选择要生成的助记词个数，每点一下 “GENERATE” 按钮就可以生成一组新的助记词。
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/2IdSSMC.png)
 
@@ -125,7 +125,7 @@ https://iancoleman.io/bip39/ 是一个颇受欢迎的工具，源码开源在 [G
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/AT2AHuT.png)
 
-你甚至能通过抛硬币或掷骰子的方式直接生成助记词，但因为 [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 助记词的最后一个单词包含校验和，所以过程要麻烦的多，我写了一个[小工具](https://github.com/gitzhou/mnemonic-last-word)来解决这个问题，你可以**离线运行**它，原理在助记词一节中详细介绍过，这里只简单说一下。
+你甚至能通过抛硬币或掷骰子的方式直接生成助记词，但因为 [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 助记词的最后一个单词包含校验和，所以过程要麻烦的多，我写了一个 [小工具](https://github.com/gitzhou/mnemonic-last-word) 来解决这个问题，你可以 ** 离线运行 ** 它，原理在助记词一节中详细介绍过，这里只简单说一下。
 
 [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 助记词的最后一个单词其实由两部分确定：
 
@@ -148,19 +148,19 @@ https://iancoleman.io/bip39/ 是一个颇受欢迎的工具，源码开源在 [G
 
 1. 选择助记词语言
 2. 使用自己认可的方法先确定前 23 个助记词，填到 [2] 里
-3. 抛硬币或用其他方法得到一个 3 位的**随机**二进制串，填到 [3] 里
-4. 点“Calculate”按钮计算最后一个助记词
+3. 抛硬币或用其他方法得到一个 3 位的 ** 随机 ** 二进制串，填到 [3] 里
+4. 点 “Calculate” 按钮计算最后一个助记词
 
 <div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/aLiSkp9.png)</div>
 
 同样的，自己生成助记词的套路有很多，如何选择看你自己，不论使用何种方法，都需要保证：
 
 - 整个生成过程都处于离线环境
-- 选取方法**足够随机**
+- 选取方法 ** 足够随机 **
 
 ## 如何使用冷钱包
 
-为了方便截图演示，这里事先用工具生成了一组助记词，指定的密语是`satoshi`，使用的衍生路径是`m/44'/236'/0'`。
+为了方便截图演示，这里事先用工具生成了一组助记词，指定的密语是 `satoshi`，使用的衍生路径是 `m/44'/236'/0'`。
 
 ```
 cry devote two glare orchard below box fatigue box document jar night
@@ -172,11 +172,11 @@ cry devote two glare orchard below box fatigue box document jar night
 xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6erGCyQreRLns2vrLnbfWSZM3z682jijX
 ```
 
-**请务必注意！对于真实使用的 HD 钱包，暴露这些信息将会带来灾难性的后果**！
+** 请务必注意！对于真实使用的 HD 钱包，暴露这些信息将会带来灾难性的后果 **！
 
 ### ElectrumSV
 
-在**离线电脑**上恢复冷钱包，菜单`File --> New/Restore`。最后一步指定的密码会被用于加密本地的钱包文件，只对当前钱包文件有效。
+在 ** 离线电脑 ** 上恢复冷钱包，菜单 `File --> New/Restore`。最后一步指定的密码会被用于加密本地的钱包文件，只对当前钱包文件有效。
 
 <div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/Eb1hwwS.png)</div>
 
@@ -200,11 +200,11 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/tEXshOM.png)
 
-从菜单`Wallet --> Information`，查看钱包的扩展公钥。
+从菜单 `Wallet --> Information`，查看钱包的扩展公钥。
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/hKxropK.png)
 
-在**联网电脑**上导入扩展公钥恢复观察钱包，菜单`File --> New/Restore`。
+在 ** 联网电脑 ** 上导入扩展公钥恢复观察钱包，菜单 `File --> New/Restore`。
 
 <div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/bRWXpeF.png)</div>
 
@@ -242,7 +242,7 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
 }
 ```
 
-3. 在冷钱包上，从文件加载交易，菜单`Tools --> Load transaction --> From file`
+3. 在冷钱包上，从文件加载交易，菜单 `Tools --> Load transaction --> From file`
 
 <div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/nuKBBHp.png)</div>
 
@@ -274,9 +274,9 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
   - [WhatsOnChain.com](https://whatsonchain.com/broadcast)
   - [BitIndex API](https://www.bitindex.network/docs.html)
 
-至此，全网都会收到[这笔交易](https://whatsonchain.com/tx/4eba284fcf5653393870f3d265abbf7f65e9b3e272e7dd451872d772f94a7719)，支付完成。
+至此，全网都会收到 [这笔交易](https://whatsonchain.com/tx/4eba284fcf5653393870f3d265abbf7f65e9b3e272e7dd451872d772f94a7719)，支付完成。
 
-必须要指出的是，使用 ElectrumSV 生成的助记词（`New -> Standard wallet -> Create a new seed`），是**不符合** [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 规范的，请务必注意。
+必须要指出的是，使用 ElectrumSV 生成的助记词（`New -> Standard wallet -> Create a new seed`），是 ** 不符合 ** [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 规范的，请务必注意。
 
 <div style="width: 60%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/qLhzYhg.png)</div>
 
@@ -286,13 +286,13 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
 
 使用 Simply Cash 作为冷钱包，过程也是类似的。
 
-在**离线手机**上恢复冷钱包并核对地址。
+在 ** 离线手机 ** 上恢复冷钱包并核对地址。
 
 <div style="width: 20%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/kN8MSeC.png)</div>
 
 <div style="width: 20%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/QjZe6v6.png)</div>
 
-在**联网手机**上恢复观察钱包并核对地址。
+在 ** 联网手机 ** 上恢复观察钱包并核对地址。
 
 <div style="width: 20%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/wXxwjVw.png)</div>
 
@@ -322,9 +322,9 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
 
 <div style="width: 20%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/LaMXyOY.png)</div>
 
-至此，全网都会收到[这笔交易](https://whatsonchain.com/tx/08793a39d3286a40662deae2bc5e8e8de598079268a3c27eeda64b858ded91d9)，支付完成。
+至此，全网都会收到 [这笔交易](https://whatsonchain.com/tx/08793a39d3286a40662deae2bc5e8e8de598079268a3c27eeda64b858ded91d9)，支付完成。
 
-你可以通过下面两个视频了解 Simply Cash 的更多细节。视频由热心网友“简美小视频”制作，非常不错，分享给你。
+你可以通过下面两个视频了解 Simply Cash 的更多细节。视频由热心网友 “简美小视频” 制作，非常不错，分享给你。
 
 <video src="https://aaron67-public.oss-cn-beijing.aliyuncs.com/simply-cash-tutorial-0551.mp4" controls="controls" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto; max-height: 650px;"></video>
 
@@ -335,9 +335,9 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
 
 # 硬件钱包
 
-热钱包足够方便但存在一定的安全隐患，适合“存放”小额零钱用于日常支付。冷钱包足够安全但支付时多有不便，适合“存放”大额且不经常使用的比特币。
+热钱包足够方便但存在一定的安全隐患，适合 “存放” 小额零钱用于日常支付。冷钱包足够安全但支付时多有不便，适合 “存放” 大额且不经常使用的比特币。
 
-知名的硬件钱包厂商有 [Ledger](https://www.ledger.com/)、[TREZOR](https://trezor.io/) 和 [Keepkey](https://www.keepkey.com/)，借助精心设计的软硬件，硬件钱包能在方便使用的同时兼顾较高的安全性。网上介绍和比较硬件钱包的文章非常多，这里不再赘述，你可以从[这篇文章](https://www.buybitcoinworldwide.com/zh-cn/bitcoin-wallets/)开始了解。
+知名的硬件钱包厂商有 [Ledger](https://www.ledger.com/)、[TREZOR](https://trezor.io/) 和 [Keepkey](https://www.keepkey.com/)，借助精心设计的软硬件，硬件钱包能在方便使用的同时兼顾较高的安全性。网上介绍和比较硬件钱包的文章非常多，这里不再赘述，你可以从 [这篇文章](https://www.buybitcoinworldwide.com/zh-cn/bitcoin-wallets/) 开始了解。
 
 <div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/eNYoQxL.jpg)</div>
 
@@ -349,7 +349,7 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
 
 当郭达和蔡明都要向你支付比特币时，你应向他们提供从未使用过的不同的收款地址。
 
-在支付比特币时，大多数 HD 钱包也都会使用找零地址来满足这样的需求，以 ElectrumSV 钱包为例，默认设置会勾选“使用找零地址”的选项。
+在支付比特币时，大多数 HD 钱包也都会使用找零地址来满足这样的需求，以 ElectrumSV 钱包为例，默认设置会勾选 “使用找零地址” 的选项。
 
 <div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/G14MtjW.png)</div>
 
@@ -365,7 +365,7 @@ xpub6CbEfGaUsev7P1pDhNKm1YsL9xRNHTDPsS4u9AHsdNnHwvokk6ULWUByqdULY5SH889Bqdknkn6e
 
 - 使用多个找零地址
 
-这是 ElectrumSV 提供的一个特性，使用多个找零地址“打散”面值较大的单个找零。
+这是 ElectrumSV 提供的一个特性，使用多个找零地址 “打散” 面值较大的单个找零。
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/pY83GVe.png)
 

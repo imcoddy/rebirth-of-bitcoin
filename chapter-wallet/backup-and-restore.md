@@ -21,7 +21,7 @@
 
 以在 ElectrumSV 中恢复 Centbee 钱包为例，步骤截图如下。
 
-1. 菜单`File -> New/Restore`，通过导入助记词的方式新建一个“标准”钱包
+1. 菜单 `File -> New/Restore`，通过导入助记词的方式新建一个 “标准” 钱包
 
 <div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234834.png)</div>
 
@@ -29,7 +29,7 @@
 
 <div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522233706.png)</div>
 
-2. 在 [1] 处填写你从 Centbee 中备份的助记词，打开 Options 并勾选“指定用户密语”和“这是 BIP-39 助记词”两项
+2. 在 [1] 处填写你从 Centbee 中备份的助记词，打开 Options 并勾选 “指定用户密语” 和 “这是 BIP-39 助记词” 两项
 
 <div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234020.png)</div>
 

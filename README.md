@@ -2,25 +2,25 @@
 
 ![「比特币重生：重返创世纪」计划](images/bitcoin-forks.png)
 
-比特币诞生至今，已经过了十个年头。在此期间，因比特币几年的[扩容争议](http://1bsv.cn/%e6%af%94%e7%89%b9%e5%b8%81%e6%89%a9%e5%ae%b9%e7%ba%b7%e4%ba%89/)无果，比特币分叉为  Bitcoin Coin 和 Bitcoin Cash，随后又分叉为 Bitcoin ABC 和 Bitcoin SV。
+比特币诞生至今，已经过了十个年头。在此期间，因比特币几年的 [扩容争议](http://www.bsvers.com/43.html) 无果，比特币分叉为  Bitcoin Coin 和 Bitcoin Cash，随后又分叉为 Bitcoin ABC 和 Bitcoin SV。
 
-尽管比特币的 Ticker 多次变更，Bitcoin SV，即原版的比特币，旨在恢复原始比特币协议，保持其协议稳定且允许其大规模扩容。Bitcoin SV 将秉承维护中本聪在2008年白皮书《[比特币：一个点对点电子现金系统](https://bitcoinsv.io/bitcoin/)》中所阐述的愿景。
+尽管比特币的 Ticker 多次变更，Bitcoin SV，即原版的比特币，旨在恢复原始比特币协议，保持其协议稳定且允许其大规模扩容。Bitcoin SV 将秉承维护中本聪在 2008 年白皮书《[比特币：一个点对点电子现金系统](https://bitcoinsv.io/bitcoin/)》中所阐述的愿景。
 
-> “比特币的本质是，第0.1版一经发布，其核心设计即已固定，并在整个生命周期中保持不变。”
-- <cite>中本聪（Satoshi Nakamoto)</cite>
+> “比特币的本质是，第 0.1 版一经发布，其核心设计即已固定，并在整个生命周期中保持不变。”
+- <cite> 中本聪（Satoshi Nakamoto)</cite>
 
 尽管中本聪很早就确定了比特币经济激励和自由竞争的核心设计的本质，太多的人认为比特币协议不够完美而尝试在上面画蛇添足。尽管事实上，中本聪的设计一直都未能得以完全实现，比特币还有着无限的潜力等待着人们发掘。
 
-本项目为「[比特币重生：重返创世纪](https://github.com/imcoddy/rebirth-of-bitcoin)」计划，旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币(BSV)的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「[创世纪](https://bitcoinsv.io/2019/04/17/the-roadmap-to-genesis-part-1/)」升级计划的到来。
+本项目为「[比特币重生：重返创世纪](https://github.com/imcoddy/rebirth-of-bitcoin)」计划，旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币 (BSV) 的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「[创世纪](https://bitcoinsv.io/2019/04/17/the-roadmap-to-genesis-part-1/)」升级计划的到来。
 
 前天，在顺利实现 Quasar 升级之后，Bitcoin SV 在主网上打出了 [256M 的区块](https://blockchair.com/bitcoin-sv/block/593164)，正如当年中本聪所说的那样：
 
-> “现有的Visa信用卡网络每天在全球范围内处理约1500万笔互联网交易。比特币仅用现有的硬件就已经可以达到更大规模，而且成本只是信用卡交易的一小部分。比特币从未真正达到规模上限。”
-- <cite>中本聪（Satoshi Nakamoto)</cite>
+> “现有的 Visa 信用卡网络每天在全球范围内处理约 1500 万笔互联网交易。比特币仅用现有的硬件就已经可以达到更大规模，而且成本只是信用卡交易的一小部分。比特币从未真正达到规模上限。”
+- <cite> 中本聪（Satoshi Nakamoto)</cite>
 
 Bitcoin SV 正在成为比特币应有的样子，愿这条路上你也能一起前行。
 
-邱少贤[@imcoddy](https://github.com/imcoddy)
+邱少贤 [@imcoddy](https://github.com/imcoddy)
 
 记于 20190730
 
@@ -40,13 +40,13 @@ $ gitbook serve
 
 ### 文档编辑
 
-本项目使用 Markdown (更准确地说是 [GitHub Flavored Markdown](https://github.github.com/gfm/), GFM) 的格式编写，可选择 [Typora](https://typora.io/) 或者其它的 Markdown 编辑器进行修改。对于 Markdown 不了解的请参阅这份[简明指南](https://www.markdown.cn/)。
+本项目使用 Markdown (更准确地说是 [GitHub Flavored Markdown](https://github.github.com/gfm/), GFM) 的格式编写，可选择 [Typora](https://typora.io/) 或者其它的 Markdown 编辑器进行修改。对于 Markdown 不了解的请参阅这份 [简明指南](https://www.markdown.cn/)。
 
 本项目还支持使用 mathjax 公式渲染。由于 GitHub 本身不对公式进行渲染，无法正常显示的可以安装 [GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima) 插件，以获得良好的阅读体验。
 
 ### 排版指南
 
-本项目建议参照[中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)的排版规范，主要采种下列几点：
+本项目建议参照 [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines) 的排版规范，主要采种下列几点：
 
 * 中英文之间需要增加空格
 * 中文与数字之间需要增加空格
@@ -60,7 +60,7 @@ $ gitbook serve
 
 引用图片的方式建议增加 Alt Text，如 `![Double Spending Problem](/images/double-spending-problem.png)`
 
-由于 Markdown 默认显示全宽图片无法指定大小，如果需要特别指定图片大小的场景，建议使用 HTML 代码来指定大小和居中布局。 `<img src="/images/double-spending-problem.png" width = "400" alt="图片名称" align=center />`
+由于 Markdown 默认显示全宽图片无法指定大小，如果需要特别指定图片大小的场景，建议使用 HTML 代码来指定大小和居中布局。 `<img src="/images/double-spending-problem.png"width="400"alt="alt-text-for-image"align=center />`
 
 ## 提交流程
 
