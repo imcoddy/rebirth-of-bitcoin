@@ -1,18 +1,18 @@
 # 区块链
 
-比特币的交易，会被“整理”到区块中，形成一条可追溯到创世块的链。
+比特币的交易，会被 “整理” 到区块中，形成一条可追溯到创世块的链。
 
-网络活动不断产生新交易，不断“整理”出新区块来记录“这一段时间内”的交易。
+网络活动不断产生新交易，不断 “整理” 出新区块来记录 “这一段时间内” 的交易。
 
-为了能彼此关联，每个区块都会记录它的前一个区块是什么，这相当于，区块按先来后到的顺序被“摞”在一起，形成了一条“链”。
+为了能彼此关联，每个区块都会记录它的前一个区块是什么，这相当于，区块按先来后到的顺序被 “摞” 在一起，形成了一条 “链”。
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/rXwGgGZ.png)
 
 一个区块，可以用高度标识，也可以用哈希标识。
 
-随着时间的推移，链不断延长，这条**区块链**，记录了截至目前为止所有的比特币交易，是比特币网络的总账本。
+随着时间的推移，链不断延长，这条 ** 区块链 **，记录了截至目前为止所有的比特币交易，是比特币网络的总账本。
 
-我们说一笔交易被写入账本，就是说这笔交易通过了验证，已经被“整理”进区块，并得到了全网络的认可。
+我们说一笔交易被写入账本，就是说这笔交易通过了验证，已经被 “整理” 进区块，并得到了全网络的认可。
 
 这篇文章，介绍比特币的区块和区块链。
 
@@ -32,14 +32,14 @@
 1~9 VarInt | 区块里有多少笔交易
 变长 | 各个交易的数据
 
-区块头就是这个区块的“标签”，代码见 [block.h#L21](https://github.com/bitcoin-sv/bitcoin-sv/blob/d9b12a23db/src/primitives/block.h#L21)，区块头的结构（序列化后）为
+区块头就是这个区块的 “标签”，代码见 [block.h#L21](https://github.com/bitcoin-sv/bitcoin-sv/blob/d9b12a23db/src/primitives/block.h#L21)，区块头的结构（序列化后）为
 
 长度（字节） | 字段 | 描述
 ------ |------- | ------
 4 | nVersion | 版本号，用来跟踪软件或协议的升级
 32 | hashPrevBlock | 前一个区块（父区块）的哈希值
-32 | hashMerkleRoot | 一个哈希值，表示这个区块中全部交易构成的Merkle树的根
-4 | nTime | 区块创建的时间，Unix时间戳格式
+32 | hashMerkleRoot | 一个哈希值，表示这个区块中全部交易构成的 Merkle 树的根
+4 | nTime | 区块创建的时间，Unix 时间戳格式
 4 | nBits | 难度目标，该区块工作量证明算法的难度目标
 4 | nNonce | 一个用于证明工作量的计数器
 
@@ -47,7 +47,7 @@
 
 这个哈希标识，可以直接用收到的区块数据计算出来，并不需要传输。通过下面的过程，计算区块的哈希。
 
-1. 对序列化后的**区块头**数据做 SHA256 运算，得到 S1
+1. 对序列化后的 ** 区块头 ** 数据做 SHA256 运算，得到 S1
 2. 对 S1 做 SHA256 运算，得到 S2
 3. 按字节翻转 S2，得到区块的哈希
 
@@ -55,7 +55,7 @@
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/XZp5yPB.png)
 
-高度 100,000 的区块，从[序列化后的区块数据](https://blockchain.info/block/000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506?format=hex)中找到区块头。
+高度 100,000 的区块，从 [序列化后的区块数据](https://blockchain.info/block/000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506?format=hex) 中找到区块头。
 
 ```
 01000000  # nVersion
@@ -66,21 +66,21 @@
 0f2b5710  # nNonce
 ```
 
-这个区块在 Unix 时间戳为`0x4d1b2237`时，即`‭1293623863‬`时被创建出来，[转换后的时间](https://www.epochconverter.com/)为`2010-12-29 11:57:43 UTC`，即北京时间`2010-12-29 19:57:43 UTC+8`。
+这个区块在 Unix 时间戳为 `0x4d1b2237` 时，即 `‭1293623863‬` 时被创建出来，[转换后的时间](https://www.epochconverter.com/) 为 `2010-12-29 11:57:43 UTC`，即北京时间 `2010-12-29 19:57:43 UTC+8`。
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/CPsvad1.png)
 
 1. 对区块头数据做 SHA256，得到 [S1 的值](https://www.fileformat.info/tool/hash.htm?hex=0100000050120119172a610421a6c3011dd330d9df07b63616c2cc1f1cd00200000000006657a9252aacd5c0b2940996ecff952228c3067cc38d4885efb5a4ac4247e9f337221b4d4c86041b0f2b5710)`00844eeb8713eb62bc33df34ca0cfa7af2ee152a6b16788fd3f2fea69861f3c8`
 2. 对 S1 做 SHA256，得到 [S2 的值](https://www.fileformat.info/tool/hash.htm?hex=00844eeb8713eb62bc33df34ca0cfa7af2ee152a6b16788fd3f2fea69861f3c8)`06e533fd1ada86391f3f6c343204b0d278d4aaec1c0b20aa27ba030000000000`
-3. 按字节翻转 S2，得到区块哈希`000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506`
+3. 按字节翻转 S2，得到区块哈希 `000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506`
 
-关于`nBits`和`nNonce`字段的含义，下篇文章介绍。
+关于 `nBits` 和 `nNonce` 字段的含义，下篇文章介绍。
 
 ## Merkle 树
 
-Merkle 树是一棵二叉树，用于**归纳**一个区块中的所有交易，代码见 [merkle.cpp](https://github.com/bitcoin-sv/bitcoin-sv/blob/d9b12a23db/src/consensus/merkle.cpp)。
+Merkle 树是一棵二叉树，用于 ** 归纳 ** 一个区块中的所有交易，代码见 [merkle.cpp](https://github.com/bitcoin-sv/bitcoin-sv/blob/d9b12a23db/src/consensus/merkle.cpp)。
 
-Merkle 树会生成**整个交易集合的数字指纹**，形如
+Merkle 树会生成 ** 整个交易集合的数字指纹 **，形如
 
 <div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0903.png)</div>
 
@@ -91,7 +91,7 @@ Merkle 树会生成**整个交易集合的数字指纹**，形如
 
 $H_A + H_B$ 的意思拼接 $H_A$ 和 $H_B$，如果 $H_A = 0123$，$H_B = 4567$，则 $H_A + H_B = 01234567$。
 
-不管区块中有多少交易，都使用 Merkle 树结构进行归纳，最顶上的树根`Merkle Root`的值，会放到区块头的`hashMerkleRoot`字段中。
+不管区块中有多少交易，都使用 Merkle 树结构进行归纳，最顶上的树根 `Merkle Root` 的值，会放到区块头的 `hashMerkleRoot` 字段中。
 
 Merkle 树将区块头和区块中的交易关联了起来，如果区块中的交易发生了变化，Merkle 树根的值就会变化，从而改变区块头，改变整个区块的哈希标识。
 
@@ -99,13 +99,13 @@ Merkle 树将区块头和区块中的交易关联了起来，如果区块中的�
 
 <div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0905.png)</div>
 
-为了证明交易 K 在区块中，可以用 $H_L$、$H_{IJ}$、$H_{MNOP}$ 和 $H_{ABCDEFGH}$ 这四个哈希值构造一条“Merkle 路径”，只需 128 字节，任何人都可以用这条路径，验证区块包含交易 K。
+为了证明交易 K 在区块中，可以用 $H_L$、$H_{IJ}$、$H_{MNOP}$ 和 $H_{ABCDEFGH}$ 这四个哈希值构造一条 “Merkle 路径”，只需 128 字节，任何人都可以用这条路径，验证区块包含交易 K。
 
 ## Coinbase
 
-一个区块最多只能有一笔 Coinbase 交易（一般是区块中的第一笔交易），它没有输入，“无中生有”的产生输出，即会发行新的比特币。
+一个区块最多只能有一笔 Coinbase 交易（一般是区块中的第一笔交易），它没有输入，“无中生有” 的产生输出，即会发行新的比特币。
 
-伴随着区块的产生，新的比特币会被不断“创造”出来。
+伴随着区块的产生，新的比特币会被不断 “创造” 出来。
 
 比特币协议规定：
 
@@ -121,7 +121,7 @@ Merkle 树将区块头和区块中的交易关联了起来，如果区块中的�
 - 2016 年 7 月，降低到 12.5 比特币
 - 2020 年的某个时候，也就是从区块高度 630,000 开始，它将再次下降至 6.25 比特币
 - 直到第 6,720,000 块（大约在 2137 年产生），达到比特币的最小单位 1 聪
-- 经过 6,930,000 个区块之后，大约在 2140 年，所有的共`20999999.97690000`比特币将全部发行完毕
+- 经过 6,930,000 个区块之后，大约在 2140 年，所有的共 `20999999.97690000` 比特币将全部发行完毕
 
 关于比特币的总量，可以写个程序算一下。
 
@@ -186,17 +186,17 @@ func main() {
 
 根据 [BIP-34](https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki) 的要求，Coinbase 数据需要以这个 Coinbase 交易所在的区块高度开头。
 
-交易`d0ec21e1d73d06be76c2b5b1e5ec486085bda8264229046c11b95f66f2eded83`的 Coinbase 数据为
+交易 `d0ec21e1d73d06be76c2b5b1e5ec486085bda8264229046c11b95f66f2eded83` 的 Coinbase 数据为
 
 ```
 03ec59062f48616f4254432f53756e204368756e2059753a205a6875616e67205975616e2c2077696c6c20796f75206d61727279206d653f2f06fcc9cacc19c5f278560300
 ```
 
-开头的`0x03`表示，区块高度数据紧跟其后有 3 字节，值为`0x0659ec`（小端模式），即 416236。
+开头的 `0x03` 表示，区块高度数据紧跟其后有 3 字节，值为 `0x0659ec`（小端模式），即 416236。
 
 ## 区块链
 
-注意区块头中`hashPrevBlock`字段带来的神奇效果。
+注意区块头中 `hashPrevBlock` 字段带来的神奇效果。
 
 每个区块，都会将它前一个区块的哈希值写在自己的区块头中。
 

@@ -2,7 +2,7 @@
 
 ## 哈希函数和 SHA256
 
-> 哈希函数（Hash），也称为散列函数或散列算法，是一种从任何一种数据中创建小的数字“指纹”的方法。散列函数把消息或数据压缩成摘要，使得数据量变小，将数据的格式固定下来。该函数将数据打乱混合，重新创建一个叫做散列值（hashes）的指纹。散列值通常用一个短的随机字母和数字组成的字符串来代表。好的散列函数在输入域中很少出现散列冲突。
+> 哈希函数（Hash），也称为散列函数或散列算法，是一种从任何一种数据中创建小的数字 “指纹” 的方法。散列函数把消息或数据压缩成摘要，使得数据量变小，将数据的格式固定下来。该函数将数据打乱混合，重新创建一个叫做散列值（hashes）的指纹。散列值通常用一个短的随机字母和数字组成的字符串来代表。好的散列函数在输入域中很少出现散列冲突。
 
     原始数据  --- 输入 -->  哈希函数  --- 输出 -->  数据指纹
 
@@ -20,23 +20,23 @@ SHA（Secure Hash Algorithm，安全散列算法）是一个密码散列函数�
 对于 SHA256，
 
 * 无论输入多长，都输出 64 个字符，共 32 字节（byte），256 位（bit）
-* 输出只包含数字 0 ~ 9 和字母 A ~ F，**大小写不敏感**
+* 输出只包含数字 0 ~ 9 和字母 A ~ F，** 大小写不敏感 **
 
 ## 非对称加密和签名认证
 
 现代密码学中，加密算法包括两部分。
 
 * 算法，一组规定如何进行加解密的规则，描述加解密的具体操作步骤。为了方便使用及保证算法可靠性，算法都是公开的
-* [密钥](https://zh.wikipedia.org/wiki/%E5%AF%86%E9%92%A5)，用于算法的**秘密参数**
+* [密钥](https://zh.wikipedia.org/wiki/% E5% AF%86% E9%92% A5)，用于算法的 ** 秘密参数 **
 
 在对称加密中，无论加密还是解密，都使用同一个密钥。因此，
 
 * 对密钥的保护十分重要，泄露则意味着通信密文不再安全
-* 通信双方在交换密钥时，特别是在公开的、不可信的链路（互联网）上交换密钥时，要确保密钥从未泄露（[Diffie-Hellman 密钥交换算法](https://zh.wikipedia.org/wiki/%E8%BF%AA%E8%8F%B2-%E8%B5%AB%E7%88%BE%E6%9B%BC%E5%AF%86%E9%91%B0%E4%BA%A4%E6%8F%9B)）
+* 通信双方在交换密钥时，特别是在公开的、不可信的链路（互联网）上交换密钥时，要确保密钥从未泄露（[Diffie-Hellman 密钥交换算法](https://zh.wikipedia.org/wiki/% E8% BF% AA% E8%8F% B2-% E8% B5% AB% E7%88% BE% E6%9B% BC% E5% AF%86% E9%91% B0% E4% BA% A4% E6%8F%9B)）
 
 受 Diffie-Hellman 密钥交换算法的启发，人们意识到加密和解密可以使用不同的密钥，只要这对密钥有某种对应关系即可。
 
-这种新的加密模式被称为**非对称加密**，
+这种新的加密模式被称为 ** 非对称加密 **，
 
 * 有两把密钥，一把是公开的公钥，还有一把是不公开的私钥
 * 公钥和私钥一一对应，有一把公钥就必然有一把与之对应的、独一无二的私钥，反之亦成立
@@ -55,7 +55,7 @@ SHA（Secure Hash Algorithm，安全散列算法）是一个密码散列函数�
 
 这段密文只有用对应的私钥（韩梅梅的私钥）才可以解密。只要韩梅梅的私钥没有泄露，这段密文就只有韩梅梅能解开，即使其他人获得密文，也无法解密。
 
-常用的非对称加密算法有 [RSA](https://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95)、[ElGamal](https://zh.wikipedia.org/wiki/ElGamal%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95)、[ECC](https://zh.wikipedia.org/wiki/%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF%E5%AF%86%E7%A0%81%E5%AD%A6) 等。
+常用的非对称加密算法有 [RSA](https://zh.wikipedia.org/wiki/RSA% E5%8A% A0% E5% AF%86% E6% BC%94% E7% AE%97% E6% B3%95)、[ElGamal](https://zh.wikipedia.org/wiki/ElGamal% E5%8A% A0% E5% AF%86% E7% AE%97% E6% B3%95)、[ECC](https://zh.wikipedia.org/wiki/% E6% A4% AD% E5%9C%86% E6%9B% B2% E7% BA% BF% E5% AF%86% E7% A0%81% E5% AD% A6) 等。
 
 ### 摘要和签名
 
@@ -76,19 +76,19 @@ SHA（Secure Hash Algorithm，安全散列算法）是一个密码散列函数�
 
 为了实现上述需求，李雷需要
 
-1. 将纸条内容[哈希](https://aaron67.cc/2018/02/28/hash-function-and-sha256/)（Hash），得到**摘要**（Digest）
-2. 用自己的私钥“加密”摘要，得到**签名**（Signature）
+1. 将纸条内容 [哈希](https://aaron67.cc/2018/02/28/hash-function-and-sha256/)（Hash），得到 ** 摘要 **（Digest）
+2. 用自己的私钥 “加密” 摘要，得到 ** 签名 **（Signature）
 3. 让同桌传递纸条和签名
 
 韩梅梅收到纸条和签名后，
 
-1. 用李雷的公钥，对签名“解密”，得到摘要 [1]
+1. 用李雷的公钥，对签名 “解密”，得到摘要 [1]
 2. 将纸条内容哈希，得到摘要 [2]
 3. 比较摘要 [1] 和 摘要 [2] 的内容是否一致
 
 如果内容相同，则说明纸条确实由李雷所写，且内容未经改动。这是因为，
 
-* 李雷的私钥只有他自己拥有，用私钥（李雷的私钥）“加密”的内容（签名）只有用对应的公钥（李雷的公钥）才能解开（身份认证）
+* 李雷的私钥只有他自己拥有，用私钥（李雷的私钥）“加密” 的内容（签名）只有用对应的公钥（李雷的公钥）才能解开（身份认证）
 * 哈希函数的特性保证，如果纸条内容在传递过程中改变，则得到的摘要 [2] 一定与摘要 [1] 不同（完整性）
 
 ### 总结
@@ -105,10 +105,10 @@ SHA（Secure Hash Algorithm，安全散列算法）是一个密码散列函数�
 ## 参考
 
 * [在线计算工具](https://1024tools.com/hash)
-* [维基百科，散列函数](https://zh.wikipedia.org/wiki/%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B8)
-* [维基百科，SHA家族](https://zh.wikipedia.org/wiki/SHA%E5%AE%B6%E6%97%8F)
-* [RSA算法原理（一）](https://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)，阮一峰
-* [RSA算法原理（二）](https://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)，阮一峰
+* [维基百科，散列函数](https://zh.wikipedia.org/wiki/% E6%95% A3% E5%88%97% E5%87% BD% E6%95% B8)
+* [维基百科，SHA 家族](https://zh.wikipedia.org/wiki/SHA% E5% AE% B6% E6%97%8F)
+* [RSA 算法原理（一）](https://www.ruanyifeng.com/blog/2013/06/rsa_algorithm_part_one.html)，阮一峰
+* [RSA 算法原理（二）](https://www.ruanyifeng.com/blog/2013/07/rsa_algorithm_part_two.html)，阮一峰
 * [数字签名是什么？](https://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)，阮一峰
 * [密码学笔记](https://www.ruanyifeng.com/blog/2006/12/notes_on_cryptography.html)，阮一峰
 * [程序员之网络安全系列](https://www.cnblogs.com/cnblogsfans/p/5112167.html)
