@@ -75,6 +75,7 @@
         * [SPV](chapter-client/spv.md)
         * [Tokenized](chapter-client/tokenized.md)
         * [Planaria](chapter-client/planaria.md)
+        * [BitQuery](chapter-client/bitquery.md)
 * [Metanet](chapter-metanet/README.md)
     * [Metanet 的意义](chapter-metanet/why-metanet.md)
     * [Metanet 技术实现](chapter-metanet/specification.md)
