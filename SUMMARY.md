@@ -95,6 +95,7 @@
     * [数据载体](chapter-laws/data-carrier.md)
     * [纯粹的资本主义](chapter-laws/pure-captitalism.md)
 * [比特币的经济学](chapter-economics/README.md)
+    * [钱是一种度量尺度](chapter-economics/money-is-measuring-stick.md)
     * [比特币的供给](chapter-economics/money-supply.md)
     * [减半机制](chapter-economics/halving.md)
     * [手续费与流通](chapter-economics/fees.md)
@@ -109,3 +110,4 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
+
