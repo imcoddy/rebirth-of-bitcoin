@@ -82,6 +82,15 @@ $ git checkout -b feature/new-summary-of-modification (自行根据需要修改�
 
 提交时直接将 `feature/summary-of-modification` 向 `imcoddy/rebirth-of-bitcoin` 的 `develop` 分支提交 Pullrequest 即可。
 
+## 打赏捐赠
+
+如果您认为本项目有用乐意捐赠，可以捐赠至以下地址。捐赠的币将用于奖励本项目的贡献者。
+
+![打赏](/images/donation.png)
+```
+1MzziGBa7tNNzMwVJMPEjAfM1wRcvSGZu5
+```
+
 ## 版权说明
 
 [![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-nd.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)

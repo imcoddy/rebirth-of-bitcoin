@@ -8,8 +8,10 @@
         "USDT",
         "bitcoin",
         "docx",
+        "onchain",
         "satoshis",
         "sats",
-        "unwriter"
+        "unwriter",
+        "whitepaper"
     ]
 }
