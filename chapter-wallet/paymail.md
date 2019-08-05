@@ -1,5 +1,8 @@
 # Paymail 协议
 
+比特币旨在用作点对点现金。当白皮书和节点软件发布时，系统创建了两种汇款方式。
+
+> 比特币有两种汇款方式。 如果收件人在线，你可以输入他们的 IP 地址，它将直接连接并获得一个新的公钥并发送带有注释的交易。 如果收件人不在线，那么可以发送到他们的比特币地址，即他们给你的公钥的哈希。 他们在下次上线时获得包含该交易的区块。这种方法的缺点是没有办法发送注释信息，而且如果多次使用同一地址的话，可能会丢失一些隐私性。但如果两个用户都不能同时在线或收件人无法接收连接，它是一个有用的替代方案。--[中本聪](https://nakamotostudies.org/emails/bitcoin-list-bitcoin-v0-1-alpha-release-notes/)
 
 ## 概述 - Paymail
 
@@ -37,7 +40,7 @@ Paymail 协议的目标是：
 * 安全和策略管理
 * 可扩展和被发现的能力
 
-[## bsvalias 协议](http://bsvalias.org/index.html#bsvalias)
+##[bsvalias 协议](http://bsvalias.org/index.html#bsvalias)
 
 相关协议族统称为 `bsvalias` 协议。在撰写本文时，这些包括：
 
@@ -46,7 +49,7 @@ Paymail 协议的目标是：
 * [公钥基础设施](http://bsvalias.org/03-public-key-infrastructure.html)
 * [付款地址](http://bsvalias.org/04-payment-addressing.html)
 
-[## Paymail](http://bsvalias.org/index.html#Paymail)
+##[ Paymail](http://bsvalias.org/index.html#Paymail)
 
 **Paymail** 是执行以下协议的名称：
 
@@ -56,7 +59,7 @@ Paymail 协议的目标是：
 
 该 **Paymail** 品牌被保留用于产品和服务，在最低限度，实现每个以上。
 
-[## 扩展协议](http://bsvalias.org/index.html#extension-protocols)
+##[扩展协议](http://bsvalias.org/index.html#extension-protocols)
 
 根据 [BRFC 规范](http://bsvalias.org/01-brfc-specifications.html) 中的定义，任何人都可以建议扩展 `bsvalias` 和付费邮件协议，并且根据服务发现协议的 [能力发现](http://bsvalias.org/02-03-capability-discovery.html) 部分，实现可以声明对扩展的支持以允许跨钱包过程。[](http://bsvalias.org/02-service-discovery.html)
 
