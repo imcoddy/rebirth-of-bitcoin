@@ -60,7 +60,7 @@ $ gitbook serve
 
 引用图片的方式建议增加 Alt Text，如 `![Double Spending Problem](/images/double-spending-problem.png)`
 
-由于 Markdown 默认显示全宽图片无法指定大小，如果需要特别指定图片大小的场景，建议使用 HTML 代码来指定大小和居中布局。 `<img src="/images/double-spending-problem.png"width="400"alt="alt-text-for-image"align=center />`
+由于 Markdown 默认显示全宽图片无法指定大小，如果需要特别指定图片大小的场景，建议使用 HTML 代码来指定大小和居中布局。 `<div style="width: 50%; margin: auto">![alt-text-for-image](/images/double-spending-problem.png)</div>`
 
 ## 提交流程
 
