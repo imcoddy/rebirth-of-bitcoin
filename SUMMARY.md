@@ -81,7 +81,7 @@
         * [Tokenized](chapter-client/tokenized.md)
         * [Planaria](chapter-client/planaria.md)
         * [BitQuery](chapter-client/bitquery.md)
-* [Metanet](chapter-metanet/README.md)
+* [元网 Metanet](chapter-metanet/README.md)
     * [Metanet 的意义](chapter-metanet/why-metanet.md)
     * [Metanet 技术实现](chapter-metanet/specification.md)
     * [Metanet 开发者指南](chapter-metanet/developer-guide.md)
@@ -110,4 +110,3 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
-
