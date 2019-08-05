@@ -3,6 +3,11 @@
 * [简介](README.md)
 * [序言](preface.md)
 * [比特币初体验](chapter-first-experience/README.md)
+* [比特币之道](chapter-philosophy/README.md)
+    * [诚信为本](chapter-philosophy/honesty.md)
+    * [路线图](chapter-philosophy/roadmap.md)
+    * [重返创世纪](chapter-philosophy/back-to-genesis.md)
+    * [中本聪愿景](chapter-philosophy/vision-of-satoshi.md)
 * [比特币基本原理](chapter-how-bitcoin-works/README.md)
     * [比特币的架构](chapter-how-bitcoin-works/overview.md)
     * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md)
@@ -94,10 +99,6 @@
     * [减半机制](chapter-economics/halving.md)
     * [手续费与流通](chapter-economics/fees.md)
     * [通缩货币？](chapter-economics/deflation.md)
-* [比特币之道](chapter-philosophy/README.md)
-    * [路线图](chapter-philosophy/roadmap.md)
-    * [重返创世纪](chapter-philosophy/back-to-genesis.md)
-    * [中本聪愿景](chapter-philosophy/vision-of-satoshi.md)
 
 -----
 * [致谢](acknowledgements.md)
@@ -108,4 +109,3 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
-
