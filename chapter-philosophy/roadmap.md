@@ -35,5 +35,3 @@ Bitcoin SV 的愿景是提供稳定性保障，通过有限的和公认的系列
 ## 安全即时交易（亦称零确认）
 
 即时交易对于解锁比特币支付实体商家市场至关重要。安全性的提升可以更好地保护未来的即时交易，比特币 SV 路线图也将安全即时交易视为发展的头等要务。
-
-[Source](https://bitcoinsv.io/zh/%e6%84%bf%e6%99%af-vision/ "Permalink to 愿景 (Vision) - BitcoinSV")
