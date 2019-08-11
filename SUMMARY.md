@@ -94,6 +94,7 @@
     * [匿名与隐私](chapter-laws/anonymity-and-privacy.md)
     * [数据载体](chapter-laws/data-carrier.md)
     * [纯粹的资本主义](chapter-laws/pure-captitalism.md)
+    * [Token 与证券](chapter-laws/token-and-security.md)
 * [比特币的经济学](chapter-economics/README.md)
     * [钱是一种度量尺度](chapter-economics/money-is-measuring-stick.md)
     * [比特币的供给](chapter-economics/money-supply.md)
