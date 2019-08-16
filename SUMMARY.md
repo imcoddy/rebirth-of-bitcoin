@@ -12,8 +12,7 @@
     * [比特币的架构](chapter-how-bitcoin-works/overview.md)
     * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md)
 * [比特币钱包的使用](chapter-wallet/README.md)
-    <!-- * [助记词](chapter-wallet/passphrase.md) -->
-    * [钱包的备份和恢复](chapter-wallet/backup-and-restore.md)
+    * [钱包的备份和恢复](chapter-wallet/backup-and-resthttps://simply.cash/ore.md)
     * [HD 钱包](chapter-wallet/hd-wallet.md)
     * [Paymail 协议](chapter-wallet/paymail.md)
     * [比特币钱包推荐](chapter-wallet/recommendations.md)
@@ -93,6 +92,8 @@
     * [无政府主义与乌托邦](chapter-laws/anarchism-and-utopia.md)
     * [匿名与隐私](chapter-laws/anonymity-and-privacy.md)
     * [数据载体](chapter-laws/data-carrier.md)
+    * [无需许可的迷思](chapter-laws/myth-of-permissionless.md)
+    * [无需许可的迷思](chapter-laws/myth-of-permissionless.md)
     * [纯粹的资本主义](chapter-laws/pure-captitalism.md)
     * [Token 与证券](chapter-laws/token-and-security.md)
 * [比特币的经济学](chapter-economics/README.md)
@@ -111,3 +112,4 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
+
