@@ -12,7 +12,7 @@
     * [比特币的架构](chapter-how-bitcoin-works/overview.md)
     * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md)
 * [比特币钱包的使用](chapter-wallet/README.md)
-    * [助记词](chapter-wallet/passphrase.md)
+    <!-- * [助记词](chapter-wallet/passphrase.md) -->
     * [钱包的备份和恢复](chapter-wallet/backup-and-restore.md)
     * [HD 钱包](chapter-wallet/hd-wallet.md)
     * [Paymail 协议](chapter-wallet/paymail.md)

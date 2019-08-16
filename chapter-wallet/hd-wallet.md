@@ -1,9 +1,6 @@
 # HD 钱包
 
-[Source](https://aaron67.cc/2019/01/22/bitcoin-wallet/ "Permalink to [学习笔记] 比特币钱包")
-
-
-# 不确定性（随机）钱包
+## 不确定性（随机）钱包
 
 比特币的全节点软件一般都包含钱包功能，这种钱包只是随机生成私钥的集合（JBOK，Just a Bunch of Keys），称为不确定性钱包或随机钱包。
 
@@ -21,7 +18,7 @@
 
 现在的钱包软件基本都是开箱即用的，只需同步少量数据便可直接使用，十分方便。
 
-# 确定性（种子）钱包
+## 确定性（种子）钱包
 
 确定性钱包中的私钥都可以从一个随机种子（Seed）计算出来，计算过程是单向的，你无法从私钥计算出种子的内容。
 
@@ -31,7 +28,7 @@
 
 [![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0502.png)](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0502.png)
 
-# 分层确定性钱包
+## 分层确定性钱包
 
 下列 BIP 共同定义了一种确定性钱包的实现，这种钱包被称为分层确定性（HD，Hierarchical Deterministic）钱包。
 
@@ -54,7 +51,7 @@
 
 现在主流的钱包软件基本都是兼容 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)、[BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 和 [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) 的 HD 钱包。
 
-## 从熵源创建助记词（Mnemonic）
+### 从熵源创建助记词（Mnemonic Passphrase）
 
 当你用 <https://www.bitaddress.org/> 生成一个私钥时，可以通过随意晃动鼠标和敲击键盘来引入更多的随机性。
 
@@ -117,7 +114,7 @@ L+L32=33L32=11×3L32L+L32=33L32=11×3L32
 * 随机序列是 HD 钱包初始化的起点
 * 助记词从随机序列计算得到，反过来，从助记词也可以计算出随机序列的内容
 
-## 从助记词创建种子（Seed）
+### 从助记词创建种子（Seed）
 
 ** 种子由助记词计算而来 **，使用 PBKDF2（Password-Based Key Derivation Function 2）方法。
 
@@ -188,12 +185,13 @@ L+L32=33L32=11×3L32L+L32=33L32=11×3L32
 
 所以你可以直接记录下这个种子的值，作为 HD 钱包的备份，只不过这一大串内容抄写起来有点麻烦。
 
-对一个 HD 钱包，初始化种子的过程涉及到两个 ** 变量 **：
+对一个 HD 钱包，初始化种子的过程涉及到如下 ** 变量 **：
 
 * 助记词（由随机序列的内容和助记词的语言共同决定）
 * 用户指定的密语
+* 币种的衍生路径
 
-所以在备份 HD 钱包时，需要 ** 同时备份助记词和密语 **，这样就相当于备份了整个钱包内的所有私钥。
+上面三个变量中，除了助记词是由系统硬件随机生成的之外，密语和衍生路径均可由用户设置或使用默认值。但在恢复钱包时如果有任何一个变量不同，则会被当成是一个新的种子。所以在备份 HD 钱包时，需要 ** 同时备份助记词和密语和衍生路径 **，这样的备份才是完整的。
 
 HD 钱包中的私钥是树状的层级结构。
 
