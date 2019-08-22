@@ -9,8 +9,8 @@
     * [重返创世纪](chapter-philosophy/back-to-genesis.md)
     * [中本聪愿景](chapter-philosophy/vision-of-satoshi.md)
 * [比特币基本原理](chapter-how-bitcoin-works/README.md)
-    * [比特币的架构](chapter-how-bitcoin-works/overview.md)
-    * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md)
+    <!-- * [比特币的架构](chapter-how-bitcoin-works/overview.md) -->
+    <!-- * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md) -->
 * [比特币钱包的使用](chapter-wallet/README.md)
     * [钱包的备份和恢复](chapter-wallet/backup-and-restore.md)
     * [HD 钱包](chapter-wallet/hd-wallet.md)
