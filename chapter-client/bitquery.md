@@ -1,4 +1,4 @@
-# BSV Planaria 框架技术总结二 Bitquery
+MongoDB# BSV Planaria 框架技术总结二 Bitquery
 
 此文是变形虫技术总结的第二篇，阅读此文之前建议先阅读关于变形虫的前两篇文章。
 
@@ -6,19 +6,19 @@
 
 [BSV Planaria 框架技术总结一 节点搭建](https://zhuanlan.zhihu.com/p/64697171)
 
-前面的文章说过变形虫是一个持久层框架，通过 planaria 组件爬取区块链上的交易数据，提取并加工所需的数据后将数据存储到 MongoDB 中，然后由 planarium 对外提供接口给应用程序来调取数据。在搭建好数据库之后，我们下一步关注的重点就是如何对数据库进行读写。前文已经介绍过，变形虫与传统数据库最大的区别就是读写分离，不能直接写数据库，只能通过客户端发起链上交易来修改状态机，因此向变形虫写数据本质上就是构造交易，这将在下一篇文章中总结。本文的重点就是如何高效优雅地从变形虫中读取数据。
+前面的文章说过变形虫是一个持久层框架，通过 Planaria 组件爬取区块链上的交易数据，提取并加工所需的数据后将数据存储到 MongoDB 中，然后由 Planarium 对外提供接口给应用程序来调取数据。在搭建好数据库之后，我们下一步关注的重点就是如何对数据库进行读写。前文已经介绍过，变形虫与传统数据库最大的区别就是读写分离，不能直接写数据库，只能通过客户端发起链上交易来修改状态机，因此向变形虫写数据本质上就是构造交易，这将在下一篇文章中总结。本文的重点就是如何高效优雅地从变形虫中读取数据。
 
 ## Bitquery 简介
 
-planaria 使用一套简单高效的查询语言，称为 Bitquery，类似于 sql 语言，可以将变形虫中的数据进行各种图灵完备的组合和处理，输出各种形态的数据。由于变形虫的开发目的是一个可以满足一切基于比特币链上数据需求的持久层框架，因此必须具备一种专为链上交易数据服务的查询语言，bitquery 也就因此而产生。
+Planaria 使用一套简单高效的查询语言，称为 Bitquery，类似于 SQL 语言，可以将变形虫中的数据进行各种图灵完备的组合和处理，输出各种形态的数据。由于变形虫的开发目的是一个可以满足一切基于比特币链上数据需求的持久层框架，因此必须具备一种专为链上交易数据服务的查询语言，bitquery 也就因此而产生。
 
-bitquery 查询语句本质上是一个 json 对象，之所以是这种形态是为了适应 MongoDB 的查询。这里有必要提及一下，变形虫框架为何内置数据库采用的是 MongoDB 而不是类似 mysql 的关系型数据库。照理说，链上交易数据是充分结构化的，各个交易之间，地址之间有很强的关联性，查询交易更适合使用关系型数据库，这样连表操作更为方便，性能也更好。但是对于变形虫而言，它关注的重点并不是交易本身，而是交易上携带的千变万化，各行各业的杂乱无章的非标准数据，这些数据没有统一的范式，也没有统一的关联性。在这种情形下，Nosql 的优势就会凸显出来，将一个个非标准数据看做一个个” 文件 “，不强制要求文件内容的格式，更加符合变形虫的需求目标。我有一种设想，以后的变形虫甚至可以在内部同时集成关系型和非关系型两种数据库，关系型数据库专门处理关联性高的交易数据，提升关联连表查询效率，而非关系型数据库处理各种应用的非标准数据，提升拓展性和兼容性。两种内置的数据库组件各司其职，将变形虫的性能发挥到极致。
+bitquery 查询语句本质上是一个 json 对象，之所以是这种形态是为了适应 MongoDB 的查询。这里有必要提及一下，变形虫框架为何内置数据库采用的是 MongoDB 而不是类似 mySQL 的关系型数据库。照理说，链上交易数据是充分结构化的，各个交易之间，地址之间有很强的关联性，查询交易更适合使用关系型数据库，这样连表操作更为方便，性能也更好。但是对于变形虫而言，它关注的重点并不是交易本身，而是交易上携带的千变万化，各行各业的杂乱无章的非标准数据，这些数据没有统一的范式，也没有统一的关联性。在这种情形下，NoSQL 的优势就会凸显出来，将一个个非标准数据看做一个个” 文件 “，不强制要求文件内容的格式，更加符合变形虫的需求目标。我有一种设想，以后的变形虫甚至可以在内部同时集成关系型和非关系型两种数据库，关系型数据库专门处理关联性高的交易数据，提升关联连表查询效率，而非关系型数据库处理各种应用的非标准数据，提升拓展性和兼容性。两种内置的数据库组件各司其职，将变形虫的性能发挥到极致。
 
 bitquery 示例如下：
 
 ![bitquery 示例](https://docs.planaria.network/bitquery.png)
 
-bitquery 基于两种非常强大的技术，MongoDB Query Language（mongoDB 查询语言）和 JQ（一个基于栈操作的图灵完备的 json 处理语句）。查询语句如上图所示分为 3 部分，第一部分是协议的版本号，目前是 3，第二部分是基于 MongoDB 的查询语句，筛选出数据，第三部分是返回结果处理语句，对第二部筛选出来的结果进行整理和包装，处理成应用程序需要的样式。
+bitquery 基于两种非常强大的技术，MongoDB Query Language（MongoDB 查询语言）和 JQ（一个基于栈操作的图灵完备的 json 处理语句）。查询语句如上图所示分为 3 部分，第一部分是协议的版本号，目前是 3，第二部分是基于 MongoDB 的查询语句，筛选出数据，第三部分是返回结果处理语句，对第二部筛选出来的结果进行整理和包装，处理成应用程序需要的样式。
 
 第二部分查询语句主要基于 MongoDB 的查询语句，但是与原生的 MongoDB 查询略有不同，针对 Planaria 做了一定的适配，选取了部分查询功能，使用 json 对象的各个成员来标记搜索条件。
 
@@ -28,7 +28,7 @@ query 字段（q）可以包含下列成员（后文会依次详细说明）：
 
 * find：同 MongoDB 的 find 条件语句。
 * aggregate：对应 MongoDB 的聚合语句。
-* project：对应 mongoDB 的 project 操作符
+* project：对应 MongoDB 的 project 操作符
 * sort：对应 MongoDB 的排序操作符
 * limit：对应 MongoDB 的个数限制操作
 * skip：对应跳过操作，通过 limit 和 skip 可以实现翻页
@@ -78,7 +78,7 @@ Cache-Control: no-cache
 Postman-Token: 6445346e-1444-8450-4cb5-088197fe921e
 ```
 
-这个语句的意思是取出最近的一条 memo.sv（一个 bsv 链上微博）的交易数据，原理我们后文介绍。
+这个语句的意思是取出最近的一条 memo.sv（一个 BSV 链上微博）的交易数据，原理我们后文介绍。
 
 可以看到这个查询语句返回了一系列数据，填充在表格中，我们将其 json 源码（从 postman 直接请求）贴下来，如下：
 
@@ -204,24 +204,24 @@ Postman-Token: 6445346e-1444-8450-4cb5-088197fe921e
 这是从上面的 output 中摘取出来的一个输出脚本
 
 ```
-{  
+{
    "i":0,
-   "b0":{  
+   "b0":{
       "op":118
    },
-   "b1":{  
+   "b1":{
       "op":169
    },
    "b2":"rjVo4QocscdXU/oca7cRtfhv+8E=",
    "s2":"\ufffd5h\ufffd\n\u001c\ufffd\ufffdWS\ufffd\u001ck\ufffd\u0011\ufffd\ufffdo\ufffd\ufffd",
-   "b3":{  
+   "b3":{
       "op":136
    },
-   "b4":{  
+   "b4":{
       "op":172
    },
    "str":"OP_DUP OP_HASH160 ae3568e10a1cb1c75753fa1c6bb711b5f86ffbc1 OP_EQUALVERIFY OP_CHECKSIG",
-   "e":{  
+   "e":{
       "v":26870,
       "i":0,
       "a":"1Gt8ZMCxkGbkTQfMuPnUZWx8y9ydWfuQA1"
@@ -255,9 +255,9 @@ OP_DUP OP_HASH160 ae3568e10a1cb1c75753fa1c6bb711b5f86ffbc1 OP_EQUALVERIFY OP_CHE
 
 
 ```
-{  
+{
    "i":1,
-   "b0":{  
+   "b0":{
       "op":106
    },
    "b1":"bQI=",
@@ -265,7 +265,7 @@ OP_DUP OP_HASH160 ae3568e10a1cb1c75753fa1c6bb711b5f86ffbc1 OP_EQUALVERIFY OP_CHE
    "b2":"QSBCaXRjb2luZXIgaW4gdGhlIHN3YXJtIG9mIHNwZWN1bGF0b3JzLi4uCgpodHRwczovL2kuaW1ndXIuY29tLzRNU0xZVW8ubXA0CgojQml0Y29pbg==",
    "s2":"A Bitcoiner in the swarm of speculators...\n\nhttps://i.imgur.com/4MSLYUo.mp4\n\n#Bitcoin",
    "str":"OP_RETURN 6d02 4120426974636f696e657220696e2074686520737761726d206f662073706563756c61746f72732e2e2e0a0a68747470733a2f2f692e696d6775722e636f6d2f344d534c59556f2e6d70340a0a23426974636f696e",
-   "e":{  
+   "e":{
       "v":0,
       "i":1,
       "a":"false"
@@ -292,11 +292,11 @@ OP_RETURN 6d02 4120426974636f696e657220696e2074686520737761726d206f6620737065637
 
 然后我们研究 Bitquery 的 query 部分，查询体。
 
-query 部分的本质是查询 MongoDB，而且由于 Planaria 只可读，在使用它的时候我们只需要关注读取语句（当然如果你要自定制 planaria.js，需要研究 MongoDB 的写入操作，这不在本文的讨论范畴内，以后专门写）。因此我们需要先对 mongoDB 的 find 操作的一些基本概念进行介绍，官方文档如下：
+query 部分的本质是查询 MongoDB，而且由于 Planaria 只可读，在使用它的时候我们只需要关注读取语句（当然如果你要自定制 planaria.js，需要研究 MongoDB 的写入操作，这不在本文的讨论范畴内，以后专门写）。因此我们需要先对 MongoDB 的 find 操作的一些基本概念进行介绍，官方文档如下：
 
 [MongoDB 的 Find 操作](https://docs.mongodb.com/manual/reference/method/db.collection.find/)
 
-find 语句传入一个 json 对象，json 对象中的每一个字段名代表要指定的字段名，字段的值代表搜索条件，多个字段可以并列，相当于 sql 语句中的 and 条件。
+find 语句传入一个 json 对象，json 对象中的每一个字段名代表要指定的字段名，字段的值代表搜索条件，多个字段可以并列，相当于 SQL 语句中的 and 条件。
 
 这里由于篇幅不够，详细的操作无法全部说明，就挑一些官网的典型示例来说明一下。
 
@@ -463,7 +463,7 @@ query 部分示例与详解：
 
 ## JQ json 后处理语句
 
-在上一步获取到查询结果后，mongoDB 返回的是一个 json，如果我们希望对这个 json 进行一些后处理，就可以使用 bitquery 提供的另一个强大的工具，JQ 后处理。
+在上一步获取到查询结果后，MongoDB 返回的是一个 json，如果我们希望对这个 json 进行一些后处理，就可以使用 bitquery 提供的另一个强大的工具，JQ 后处理。
 
 JQ 是一个轻量级，图灵完备的堆栈式命令行 Json 处理工具。官方网站如下：
 
@@ -674,7 +674,7 @@ after transform =  [ { _id: 5cd041b74171e816cb23c05b,
        h: '000000000000000008c75b2424d2f4975015c2fc5add0af997e9e332a9b42898',
        t: 1557152175 } } ]
 running jq
-STR =  
+STR =
 error jq SyntaxError: Unexpected end of JSON input
     at JSON.parse (<anonymous>)
     at Socket.child.stdout.on (/app/node_modules/bigjq/index.js:17:29)

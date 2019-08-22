@@ -65,7 +65,7 @@ Bitsocket（比特套接字）：一个监听区块链事件，由事件触发�
 
 Planaria（变形虫）：一个支持自由定制规则的储存框架，在此基础上可以实现所有的程序逻辑，这也是本文要重点说明的理论基础。
 
-[Opening up a whole new dimension to programming Bitcoin powered state machines​medium.com](https://link.zhihu.com/?target=https%253A//medium.com/%2540_unwriter/planaria-systems-programming-interface-e9db226012d5)
+[Opening up a whole new dimension to programming Bitcoin powered state machines​medium.com](https://link.zhihu.com/?target=https%253A//medium.com/%2540_unwriter/Planaria-systems-programming-interface-e9db226012d5)
 
 ## 变形虫 Planaria
 
@@ -172,7 +172,7 @@ Unwriter 说实现这个需要彻底放开所有的脚本限制。在我看来�
 
 * 输入： onmempool，onblock，onrestart 三个 api 方法，来监听不同的区块链事件，来进行相应的处理
 * 处理逻辑：数据的 CRUD
-* 状态存储：planaria and planarium 两个组件，一个爬行区块链，一个提供查询
+* 状态存储：Planaria and Planarium 两个组件，一个爬行区块链，一个提供查询
 * 输出：通过 zeroMq 消息队列，将结果推送到消息订阅者
 
 4\. 无限状态机（理想状态）
@@ -226,7 +226,7 @@ Unwriter 说实现这个需要彻底放开所有的脚本限制。在我看来�
 [On-chain text and file sharing​www.bitpaste.app](https://link.zhihu.com/?target=https%253A//www.bitpaste.app/tx/b4f0b5ff7de49a13cc8db5b72c07f6179294eeddec117e147420ad21f5a692fe)
 
 
-变形虫 Planaria 是 Unwriter 大神基于 bitdb 在 bsv 链上开发的一个可编程化的持久层框架，关于变形虫的特点和编程思想，可以参考我之前的文章，强烈建议先看完前文再阅读本文。
+变形虫 Planaria 是 Unwriter 大神基于 bitdb 在 BSV 链上开发的一个可编程化的持久层框架，关于变形虫的特点和编程思想，可以参考我之前的文章，强烈建议先看完前文再阅读本文。
 
 [Bitcoin SV 的开发哲学 —— 变形虫框架](https://zhuanlan.zhihu.com/p/62287840)
 
@@ -234,22 +234,22 @@ Unwriter 说实现这个需要彻底放开所有的脚本限制。在我看来�
 
 Unwriter 大神在变形虫的技术支持文档中已经很详细的写了如何去部署和搭建一个节点，以及如何去调用节点提供的接口来实现应用程序的功能。我自己也照着文档去尝试着搭建节点，在搭建的过程中也遇到了一些坑，也遇到过各种各样的异常情形不能成功运行节点，也为了解决这些异常去详细地研读过源代码。现在将一些心得和学习记录总结出来分享。
 
-一般使用 Planaria 实现一个 bsv 的链上应用需要以下的一些步骤：
-1. 搭建一个变形虫的实现节点（machine），根据业务逻辑，编写变形虫的 planaria（面向区块链的爬虫）和 planarium（面向人类的接口），决定变形虫如何去爬行区块链，如何规范化地将链上数据存储为可读数据。这是一个变形虫开发的重点，之后专门学习总结如何编写 planaria.js 和 planarium.js。
-2. 客户端使用比特币的 SDK 构造特定格式交易来生成应用数据，广播这些交易让数据上链。然后由变形虫去监听这些数据并储存到 mongoDB 中提供给客户端使用。构造交易也是应用开发的重点，可以借助各种已有的库，比如 bitcoinj-sv，比如 money button 维护的 bsv.js，或者使用 unwriter 大神封装好的 datapay.js
-3. 客户端使用刚才搭建好的节点，或者使用第三方已经提供的节点，使用 bitquery 查询语句调用节点的 api，从节点的 mongoDB 中获取链上数据或者监听区块链事件
+一般使用 Planaria 实现一个 BSV 的链上应用需要以下的一些步骤：
+1. 搭建一个变形虫的实现节点（machine），根据业务逻辑，编写变形虫的 Planaria（面向区块链的爬虫）和 Planarium（面向人类的接口），决定变形虫如何去爬行区块链，如何规范化地将链上数据存储为可读数据。这是一个变形虫开发的重点，之后专门学习总结如何编写 planaria.js 和 planarium.js。
+2. 客户端使用比特币的 SDK 构造特定格式交易来生成应用数据，广播这些交易让数据上链。然后由变形虫去监听这些数据并储存到 MongoDB 中提供给客户端使用。构造交易也是应用开发的重点，可以借助各种已有的库，比如 bitcoinj-sv，比如 money button 维护的 BSV.js，或者使用 unwriter 大神封装好的 datapay.js
+3. 客户端使用刚才搭建好的节点，或者使用第三方已经提供的节点，使用 bitquery 查询语句调用节点的 api，从节点的 MongoDB 中获取链上数据或者监听区块链事件
 4. 客户端获取到数据或者监听到事件之后，采取相应的动作，此处的开发就和一般的应用没有区别了
 
 ## 节点搭建和部署
-如果想定制化的开发变形虫，指定变形虫的特征和行为，就需要自行搭建节点，自行编写 planaria 和 planarium。
+如果想定制化的开发变形虫，指定变形虫的特征和行为，就需要自行搭建节点，自行编写 Planaria 和 Planarium。
 
 因为搭建和维护一个节点目前需要相对较高的成本，如果应用本身不需要定制化的变形虫，可以使用 unwriter 已经公开的一些 endpoint。这些已经实现了和部署了的节点包括 genesis，chronos，babel，c 协议，以及新出的 file-server 这些变形虫的变体节点（这些变体节点的功能在之前的文章有说明），可以根据自身的需要去调用这些公开 api。如果不清楚具体需要哪一种功能，可以调用 genesis，具备全量的且相对原始的数据。
 
 [已经公开注册的变形虫节点](https://planaria.network/)
 
-目前版本的变形虫需要将 bsv 全节点和变形虫节点置于同一台服务器（这是代码在配置上的原因，planaria 在代码中共用了 mongoDB 的 HOST 和 bitcoind 的 HOST），应该会在后续的版本上优化。我开始的时候将 bsv 全节点和变形虫节点搭建在两个不同的服务器上，结果吃了不少亏，研究了源码才发现这个问题。
+目前版本的变形虫需要将 BSV 全节点和变形虫节点置于同一台服务器（这是代码在配置上的原因，Planaria 在代码中共用了 MongoDB 的 HOST 和 bitcoind 的 HOST），应该会在后续的版本上优化。我开始的时候将 BSV 全节点和变形虫节点搭建在两个不同的服务器上，结果吃了不少亏，研究了源码才发现这个问题。
 
-另外为了部署方便，变形虫采用的是 docker compose 进行自动化的容器化部署，首次部署时我采用的操作系统是 Ubuntu 18.04，但是在启动 planaria 容器后一直报异常，深入到 docker 内部查看 npm 的异常日志发现了如下的错误信息，大概是在 build zeromq 的时候出现了问题，照理说 docker 容器应该是可以跨平台使用的，我目前还没有很好的解决掉这个问题，不知道底层的原因是什么。后面更换了操作系统 Ubuntu 16.04，一切正常，我把错误日志贴出来，希望知道原因的朋友多指教。
+另外为了部署方便，变形虫采用的是 docker compose 进行自动化的容器化部署，首次部署时我采用的操作系统是 Ubuntu 18.04，但是在启动 Planaria 容器后一直报异常，深入到 docker 内部查看 npm 的异常日志发现了如下的错误信息，大概是在 build zeromq 的时候出现了问题，照理说 docker 容器应该是可以跨平台使用的，我目前还没有很好的解决掉这个问题，不知道底层的原因是什么。后面更换了操作系统 Ubuntu 16.04，一切正常，我把错误日志贴出来，希望知道原因的朋友多指教。
 
 
 ```
@@ -294,7 +294,7 @@ Unwriter 大神在变形虫的技术支持文档中已经很详细的写了如�
 * 至少 2G 的内存
 * 至少 300G 的硬盘储存空间（unwriter 写 200G，肯定不够用）
 
-这些配置是为了支撑一个 bsv 的全节点，加上 docker，以及运行在 docker 上的 planaria 和 planarium，其中还要运行一个 mongoDB 的服务器。如果机器性能太差，则在同步区块和读写数据库的时候会消耗大量的时间，更可能在 BSV 突如其来的大区块冲击下被搞垮，这也就是为什么 bsv 不提倡使用家庭电脑运行全节点，搭建节点就是为了商用。只是学习和了解的话建议直接使用公开节点 api。
+这些配置是为了支撑一个 BSV 的全节点，加上 docker，以及运行在 docker 上的 Planaria 和 Planarium，其中还要运行一个 MongoDB 的服务器。如果机器性能太差，则在同步区块和读写数据库的时候会消耗大量的时间，更可能在 BSV 突如其来的大区块冲击下被搞垮，这也就是为什么 BSV 不提倡使用家庭电脑运行全节点，搭建节点就是为了商用。只是学习和了解的话建议直接使用公开节点 api。
 
 而我的节点搭建在 AWS 上，考虑成本和性能，加上为了研究和学习使用，采用了如下的配置：
 
@@ -309,7 +309,7 @@ Unwriter 大神在变形虫的技术支持文档中已经很详细的写了如�
 [Run a Node](https://docs.planaria.network/#/guide?id=_0-system-prerequisites)
 
 ### 安装 bitcoin sv 全节点客户端
-bsv 全节点没有可视化客户端，只能通过命令行来安装和运行，这也一定程度上避免了个人运行全节点来浪费资源。
+BSV 全节点没有可视化客户端，只能通过命令行来安装和运行，这也一定程度上避免了个人运行全节点来浪费资源。
 
 首先从 bitcoinsv.io 的网站下载客户端软件（版本 0.1.1）：
 [官方下载镜像](https://download.bitcoinsv.io/bitcoinsv/0.1.1/)
@@ -334,7 +334,7 @@ cd .bitcoin/
 vi bitcoin.conf
 ```
 
-bicoin.conf 是比特币客户端的配置文件，变形虫节点的运行需要依赖 bsv 节点的 index 和 zeroMQ，因此要对其进行相应的配置，我的配置如下：
+bicoin.conf 是比特币客户端的配置文件，变形虫节点的运行需要依赖 BSV 节点的 index 和 zeroMQ，因此要对其进行相应的配置，我的配置如下：
 
 
 ```
@@ -383,7 +383,7 @@ addnode=13.231.92.219
 addnode=54.95.24.226
 addnode=52.195.19.127
 ```
-最后的几个 ip 是我手动添加的距离比较近的 sv 节点 ip，因为 bsv 和 bchabc 在网络层没有做隔离，在首次同步的时候经常会链接到分叉前的 abc 的节点，在同步到分叉高度后就会因为不兼容而无法继续同步，所以我手动添加了一些节点来帮助我同步数据，更快地找到组织。寻找这些节点也很简单，打开 blockchair 的节点接口，就可以查看现有的的节点了，选取 `"version": "/Bitcoin SV:0.1.0 (EB128.0)/",` 这样的节点 ip 添加到 conf 中。
+最后的几个 ip 是我手动添加的距离比较近的 sv 节点 ip，因为 BSV 和 bchabc 在网络层没有做隔离，在首次同步的时候经常会链接到分叉前的 abc 的节点，在同步到分叉高度后就会因为不兼容而无法继续同步，所以我手动添加了一些节点来帮助我同步数据，更快地找到组织。寻找这些节点也很简单，打开 blockchair 的节点接口，就可以查看现有的的节点了，选取 `"version": "/Bitcoin SV:0.1.0 (EB128.0)/",` 这样的节点 ip 添加到 conf 中。
 
 [blockchair nodes](https://api.blockchair.com/bitcoin-sv/nodes)
 
@@ -448,18 +448,18 @@ sudo apt-get install -y nodejs
 ### 安装 Planaria Computer 与启动变形虫
 
 ```
-npm install -g planaria
+npm install -g Planaria
 ```
 
 安装好之后，就可以开始创建变形虫的状态机（machine）了。
 
-先给 planaria 创建一个文件夹，作为变形虫节点的数据文件夹：
+先给 Planaria 创建一个文件夹，作为变形虫节点的数据文件夹：
 
 
 ```
-mkdir planaria
+mkdir Planaria
 
-cd planaria/
+cd Planaria/
 ```
 
 然后创建第一个状态机
@@ -490,9 +490,9 @@ pc new machine
 
 package.json 是常见的 nodejs 依赖管理，如果你的变形虫代码逻辑需要依赖一些其他的 nodejs 的库，可以在这里面进行编辑。
 
-Planaria.js 是面向区块链的爬虫逻辑，里面需要编写如何解析原始交易，并提取其中的信息储存到 MongoDB 中。
+planaria.js 是面向区块链的爬虫逻辑，里面需要编写如何解析原始交易，并提取其中的信息储存到 MongoDB 中。
 
-Planarium.js 是面向应用的展示层逻辑，将 MongoDB 的数据读取出来，加工成应用需要的格式，返回给应用。
+planarium.js 是面向应用的展示层逻辑，将 MongoDB 的数据读取出来，加工成应用需要的格式，返回给应用。
 
 README.md 是你的自定义协议或者状态机的一个说明文档（markdown 格式），在公开发布此状态机的时候会上传此文档，作为描述状态机功能和使用方法的文档。
 
@@ -505,19 +505,19 @@ pc start
 * Storage Path： docker volume 所挂载的文件路径。推荐用默认
 * Memory in GB： 需要为容器预留的内存，推荐 2G，我这里设置的 1G
 * 域名：这个域名是为了发布变形虫之后，提供给外界使用的，可以直接用 ip 地址
-* Join the planaria network：如果你想运行一个私有的节点，选择 No，如果你想公开协议或者公开节点，选择 Yes
+* Join the Planaria network：如果你想运行一个私有的节点，选择 No，如果你想公开协议或者公开节点，选择 Yes
 * Port: 变形虫的对外端口，默认 3000
-* BITCOIN_USER： bsv 节点 rpc 的用户名，上文有写
-* BITCOIN_PASSWORD： bsv 节点 json-rpc 的密码，上文有写
+* BITCOIN_USER： BSV 节点 rpc 的用户名，上文有写
+* BITCOIN_PASSWORD： BSV 节点 json-rpc 的密码，上文有写
 
-上面的配置在 Planaria 根目录下的.env 中可以随时修改。然后就会看到代码开始启动两个 docker 容器 (interplanaria/planarium 和 interplanaria/planaria）。之后就会看到容器启动成功。但是容器启动成功并不等于变形虫已经启动成功，需要通过日志来查看。容器的日志可以通过 docker 命令来查看，但这里我们有 PC 工具，不用和 docker 打交道，直接执行
+上面的配置在 Planaria 根目录下的.env 中可以随时修改。然后就会看到代码开始启动两个 docker 容器 (interPlanaria/Planarium 和 interPlanaria/Planaria）。之后就会看到容器启动成功。但是容器启动成功并不等于变形虫已经启动成功，需要通过日志来查看。容器的日志可以通过 docker 命令来查看，但这里我们有 PC 工具，不用和 docker 打交道，直接执行
 
 ```
 pc logs write
 
 pc logs read
 ```
-write 指的是 planaria 容器的日志，read 指的是 planarium 的容器，如果容器里发生任何错误或异常，都可以从日志中获取到信息。如果容器内部没有异常，正常启动，就可以看到容器对外开放了 3000 端口。此时从外部浏览器访问服务器的 3000 端口（http://XXX.XXX.XXX.XXX:3000/），就可以显示如下的画面：
+write 指的是 Planaria 容器的日志，read 指的是 Planarium 的容器，如果容器里发生任何错误或异常，都可以从日志中获取到信息。如果容器内部没有异常，正常启动，就可以看到容器对外开放了 3000 端口。此时从外部浏览器访问服务器的 3000 端口（http://XXX.XXX.XXX.XXX:3000/），就可以显示如下的画面：
 
 
 有几个 Gene，就有几个状态机显示在这里，点击 query 进去，就会发现和以下公开的 genesis 数据库一样的 bitquery 查询界面：
