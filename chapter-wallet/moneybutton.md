@@ -1,10 +1,10 @@
-# MoneyBtton 钱包的使用
+# MoneyButton 钱包的使用
 
-MoneyButton，是一款极简单的支付系统（Simple Payment System），只需轻轻一滑，支付随即完成；支持 Paymail：比特币的可扩展身份协议，用户相互转账，只需使用邮件地址，而不是复杂的比特币地址，转账就像发送邮件一样简单方便，邮件地址也便于记忆、管理，Paimail 与现有身份系统兼容。
+MoneyButton，是一款极简单的支付系统（Simple Payment System），只需轻轻一滑，支付随即完成；支持 Paymail：比特币的可扩展身份协议，用户相互转账，只需使用邮件地址，而不是复杂的比特币地址，转账就像发送邮件一样简单方便，邮件地址也便于记忆、管理，Paymail 与现有身份系统兼容。
 
-目前，开发人员很容易将其构建到应用程序中，用户也很容易用它付款。交易费用为零，支付不能被冻结、撤销、冻结。So，要想更好的体验 BSV 应用，首先需要拥有一个 MoneyBtton 账号。
+目前，开发人员很容易将其构建到应用程序中，用户也很容易用它付款。交易费用为零，支付不能被冻结、撤销、冻结。So，要想更好的体验 BSV 应用，首先需要拥有一个 MoneyButton 账号。
 
-###一、注册
+### 注册
 
 1. 官网：<https://www.moneybutton.com
 2. 注册：
@@ -13,13 +13,13 @@ MoneyButton，是一款极简单的支付系统（Simple Payment System），只
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8p2Ijia7U577I6uqQVp7zWsmuqtJOmu2PJRXeiceRXZNicSubRxOTlA4yTw/640?wx_fmt=png)![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pWl1TDLCvv8eKT7oBNkoJ1uLeDMWF8hXEoGu3E5zXE2ZXu5tAeovvLg/640?wx_fmt=png)
 
-###二、抄好助记词
+### 抄好助记词
 
 备份助记词，不要拍照，不要网络存储，一定要用笔抄写保存好助记词，如果忘记密码，可以通过助记词恢复钱包里的 BSV。
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pudRbFeic64ZuuxJRfra1T4myuTwYd4Hlbnxh4M1rpHQLGGZRIsia3qKA/640?wx_fmt=png)![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pGOSDHgJK9PfT9haSNpicCOPTsldfdt0B1iaTiboH27Ricl1TxPUEvdUgjA/640?wx_fmt=png)![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8ptsVmXt0ia8GnibhFsGA2k5AKqGgU7iaeJDIOHYfHESRQXgVjlFSMpqTpA/640?wx_fmt=png)
 
-###三、存放 BSV
+### 存放 BSV
 
 在准备存钱之前，请打开注册时的邮箱先进行验证。
 
@@ -33,27 +33,27 @@ MoneyButton，是一款极简单的支付系统（Simple Payment System），只
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pxbLNqnIwOwaia5fWo27vdOA7UGVxf0hPzDLD7bHCtibiabcxP8lVqlCdQ/640?wx_fmt=png)
 
-###四、发送 BSV
+### 发送 BSV
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8ptLCZyFSA2JZBibs0ibbWr0sRqtAhPqrLEroSEAxiaheoEbFVNDNJNVArg/640?wx_fmt=png)
 
-###五、查看收发 BSV 历史记录
+### 查看收发 BSV 历史记录
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pjknQribkCX9L5FjorNtPoXDJvHWIA9t1QQELgJMXavFzJVeqrM8mLOA/640?wx_fmt=png)
 
-###六、查看自己的 ID 号
+### 查看自己的 ID 号
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pMTD1SHewqyL6ica6WhFu9OOP7B6TD3005YmrSRJCOxa1UK6QXzGicRug/640?wx_fmt=png)
 
-###七、关于 Paymail
+<!-- ### 关于 Paymail -->
 
-###创建 Paymail 的好处
+### 创建 Paymail 的好处
 
 用户相互转账，只需使用 Paymail, 而不是复杂的比特币地址，便于记忆、管理；用户可以创建、购买和销售 Paymails；与现有身份系统兼容、启用身份的每个应用程序，众多优势......
 
 1. 创建 Paymail
 
-   注册 Money Button 后，你会拥有一个免费、默认的数字序号的 Paymail.
+   注册 MoneyButton 后，你会拥有一个免费、默认的数字序号的 Paymail.
 
    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8p0CicTR1zP7siakttoqjSzDM0uB04WubPU8zGGnXeYpDibCeEJVfB92b3g/640?wx_fmt=png)
 
