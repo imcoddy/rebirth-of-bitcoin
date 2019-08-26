@@ -6,11 +6,10 @@
 * [比特币之道](chapter-philosophy/README.md)
     * [诚信为本](chapter-philosophy/honesty.md)
     * [路线图](chapter-philosophy/roadmap.md)
+    * [链上扩容](chapter-philosophy/onchain-scaling.md)
     * [重返创世纪](chapter-philosophy/back-to-genesis.md)
     * [中本聪愿景](chapter-philosophy/vision-of-satoshi.md)
 * [比特币基本原理](chapter-how-bitcoin-works/README.md)
-    <!-- * [比特币的架构](chapter-how-bitcoin-works/overview.md) -->
-    <!-- * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md) -->
 * [比特币钱包的使用](chapter-wallet/README.md)
     * [钱包的备份和恢复](chapter-wallet/backup-and-restore.md)
     * [HD 钱包](chapter-wallet/hd-wallet.md)
@@ -47,6 +46,7 @@
         * [比特币智能合约](chapter-scripting/smart-contract.md)
         * [比特币多重签名](chapter-scripting/multisig.md)
         * [比特币 R-Puzzle 签名](chapter-scripting/r-puzzle.md)
+    * [提升操作符上限](chapter-scripting/raising-op-code-limits.md)
     * [移除 P2SH](chapter-scripting/sunsetting-p2sh.md)
     * [恢复 OP_RETURN](chapter-scripting/restoring-op_return.md)
 * [比特币网络](chapter-network/README.md)
