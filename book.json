@@ -51,6 +51,8 @@
     "prism",
     "prism-themes",
     "search-pro",
+    "sharing-plus",
+    "sitemap-general",
     "splitter",
     "-tbfed-pagefooter",
     "theme-comscore"
@@ -96,6 +98,42 @@
       "titleSuffix": " - Metanet.press",
       "description": "本项目为「比特币重生：重返创世纪」计划，旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币 (BSV) 的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「创世纪」升级计划的到来。",
       "keywords": "BSV,BSV社区,BitcoinSV社区,BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,比特币现金,比特币SV,区块链,中本聪愿景"
+    },
+    "sharing": {
+      "douban": true,
+      "facebook": true,
+      "google": false,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": false,
+      "linkedin": false,
+      "messenger": false,
+      "pocket": true,
+      "qq": true,
+      "qzone": false,
+      "stumbleupon": false,
+      "twitter": true,
+      "viber": false,
+      "vk": false,
+      "weibo": true,
+      "whatsapp": false,
+      "all": [
+        "douban",
+        "facebook",
+        "google",
+        "instapaper",
+        "twitter",
+        "weibo",
+        "messenger",
+        "qq",
+        "qzone",
+        "weibo",
+        "pocket",
+        "whatsapp"
+      ]
+    },
+    "sitemap-general":{
+      "prefix":"https://metanet.press"
     },
     "tbfed-pagefooter": {
       "copyright": "©2019 - Metanet.press",

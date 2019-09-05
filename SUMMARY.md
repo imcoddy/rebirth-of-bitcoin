@@ -3,7 +3,7 @@
 * [简介](README.md)
 
 -----
-* [序言](preface.md)
+<!-- * [序言](preface.md) -->
 
 -----
 * [比特币之道](chapter-philosophy/README.md)
@@ -135,9 +135,9 @@
     * [通缩货币？](chapter-economics/deflation.md)
 
 -----
-* [致谢](acknowledgements.md)
-* [词汇表](GLOSSARY.md)
-* [更新日志](changelog.md)
+<!-- * [致谢](acknowledgements.md) -->
+<!-- * [词汇表](GLOSSARY.md) -->
+<!-- * [更新日志](changelog.md) -->
 
 -----
 * [附录](appendix/README.md)
