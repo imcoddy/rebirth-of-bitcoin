@@ -58,21 +58,21 @@
       "showLevel": false
     },
     "donate": {
-      "wechat": "images/donation.png",
+      "wechat": "/images/donation.png",
       "title": "",
       "button": "赏",
       "wechatText": "BSV 打赏"
     },
     "favicon": {
-      "shortcut": "images/favicon.ico",
-      "bookmark": "images/favicon.ico",
-      "appleTouch": "images/apple-touch-icon.png"
+      "shortcut": "/images/favicon.ico",
+      "bookmark": "/images/favicon.ico",
+      "appleTouch": "/images/apple-touch-icon.png"
     },
     "ga": {
       "token": "UA-XXXX-Y"
     },
     "github-buttons": {
-      "repo": "imcoddy/rebirth-of-bitcoin",
+      "repo": "https://github.com/imcoddy/rebirth-of-bitcoin",
       "types": ["star", "watch", "fork"],
       "size": "small"
     },
