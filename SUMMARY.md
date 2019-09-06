@@ -64,6 +64,7 @@
     * [比特币 R-Puzzle 签名](chapter-scripting/r-puzzle.md)
   * [提升操作符上限](chapter-scripting/raising-op-code-limits.md)
   * [移除 P2SH](chapter-scripting/sunsetting-p2sh.md)
+  * [隔离见证的风险](chapter-scripting/danger-of-segwit.md)
   * [恢复 OP_RETURN](chapter-scripting/restoring-op_return.md)
 
 ---
