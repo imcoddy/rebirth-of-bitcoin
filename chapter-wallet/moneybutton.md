@@ -1,13 +1,13 @@
-# MoneyButton 钱包的使用
+## MoneyButton 钱包的使用
 
 MoneyButton，是一款极简单的支付系统（Simple Payment System），只需轻轻一滑，支付随即完成；支持 Paymail：比特币的可扩展身份协议，用户相互转账，只需使用邮件地址，而不是复杂的比特币地址，转账就像发送邮件一样简单方便，邮件地址也便于记忆、管理，Paymail 与现有身份系统兼容。
 
-目前，开发人员很容易将其构建到应用程序中，用户也很容易用它付款。交易费用为零，支付不能被冻结、撤销、冻结。So，要想更好的体验 BSV 应用，首先需要拥有一个 MoneyButton 账号。
+目前，开发人员很容易将其构建到应用程序中，用户也很容易用它付款。交易费用为零，支付不能被冻结、撤销、冻结。因此，要想更好的体验 BSV 应用，首先需要拥有一个 MoneyButton 账号。
 
 ### 注册
 
-1. 官网：<https://www.moneybutton.com
-2. 注册：
+1.  官网：<https://www.moneybutton.com>
+2.  注册：
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pV56zuibEUhdxpIl879bycFytLW5lnHt9KpU4Aa75jYTg71ZfGCibDic8A/640?wx_fmt=png)![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8ph3T6hStXD96qLlag9mZvvicicrL0C18MtG2pBUHOHRA4nWU2GdMHtoHA/640?wx_fmt=png)
 
@@ -49,38 +49,37 @@ MoneyButton，是一款极简单的支付系统（Simple Payment System），只
 
 ### 创建 Paymail 的好处
 
-用户相互转账，只需使用 Paymail, 而不是复杂的比特币地址，便于记忆、管理；用户可以创建、购买和销售 Paymails；与现有身份系统兼容、启用身份的每个应用程序，众多优势......
+用户相互转账，只需使用 Paymail, 而不是复杂的比特币地址，便于记忆、管理；用户可以创建、购买和销售 Paymail；与现有身份系统兼容、启用身份的每个应用程序，众多优势......
 
 1. 创建 Paymail
 
-   注册 MoneyButton 后，你会拥有一个免费、默认的数字序号的 Paymail.
+    注册 MoneyButton 后，你会拥有一个免费、默认的数字序号的 Paymail.
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8p0CicTR1zP7siakttoqjSzDM0uB04WubPU8zGGnXeYpDibCeEJVfB92b3g/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8p0CicTR1zP7siakttoqjSzDM0uB04WubPU8zGGnXeYpDibCeEJVfB92b3g/640?wx_fmt=png)
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pjtiatgmG2nHibswpUpejURqe4le98fTOWLF8pgO4mYiadIXSV9rVlbvbg/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pjtiatgmG2nHibswpUpejURqe4le98fTOWLF8pgO4mYiadIXSV9rVlbvbg/640?wx_fmt=png)
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pVEFryF77t9aCibLj5sqIcNFJlNqZibZWXzk5ptzDAM3UHHxprH8FdSLQ/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pVEFryF77t9aCibLj5sqIcNFJlNqZibZWXzk5ptzDAM3UHHxprH8FdSLQ/640?wx_fmt=png)
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pSIevpoWQEgF9xIzI2LPTAeicd3qzeNtxMaFo7Y8Me3Xzs9LNuTODydA/640?wx_fmt=png)
-
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pSIevpoWQEgF9xIzI2LPTAeicd3qzeNtxMaFo7Y8Me3Xzs9LNuTODydA/640?wx_fmt=png)
 
 
 2. 设置销售 Paymail
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8plaIrN1slgEDBQjlPEwStQxu68xkYXTGCHSgeOPavFMAwAic2KU6ib8mg/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8plaIrN1slgEDBQjlPEwStQxu68xkYXTGCHSgeOPavFMAwAic2KU6ib8mg/640?wx_fmt=png)
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pkdLj3peiarJFcic91N3mria7TiaWAdmfliaZHksC0ckJl3UoYT8nja7J1Gw/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pkdLj3peiarJFcic91N3mria7TiaWAdmfliaZHksC0ckJl3UoYT8nja7J1Gw/640?wx_fmt=png)
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pDUW2uqqCBmopYjPL1JxUs85DWBIKrcnSpI26UTey2TIJvaAib93lqfw/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pDUW2uqqCBmopYjPL1JxUs85DWBIKrcnSpI26UTey2TIJvaAib93lqfw/640?wx_fmt=png)
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8p5hY5wET1pV3Xjt7RknhrA6icIWcRicUL3KWZm3oaJdmXOB64YODryvQQ/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8p5hY5wET1pV3Xjt7RknhrA6icIWcRicUL3KWZm3oaJdmXOB64YODryvQQ/640?wx_fmt=png)
 
 3. 设置新的 Paymail 为默认值
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pyv9aic0tNl9yFyUGzyibic6hWf1ibWa7iceDLusWfrUCuK8UhyvWfIW1Tzw/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pyv9aic0tNl9yFyUGzyibic6hWf1ibWa7iceDLusWfrUCuK8UhyvWfIW1Tzw/640?wx_fmt=png)
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pveiaUIqQEP7mq6x2hYMR2x7icia2JmsQl8nibSnLEV8ueUemU9wZbP5Sjg/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pveiaUIqQEP7mq6x2hYMR2x7icia2JmsQl8nibSnLEV8ueUemU9wZbP5Sjg/640?wx_fmt=png)
 
 4. 修改销售价格
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pDTze1dUKibs3ffULB2UkWU3hI89mw2wCo0yqAo7YVyMibl7pwibDDHsjQ/640?wx_fmt=png)
+    ![img](https://mmbiz.qpic.cn/mmbiz_png/774kp4tvDbYpKPYN1eXPLoj1jlmhyf8pDTze1dUKibs3ffULB2UkWU3hI89mw2wCo0yqAo7YVyMibl7pwibDDHsjQ/640?wx_fmt=png)
