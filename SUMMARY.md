@@ -1,7 +1,11 @@
 # Summary
 
 * [简介](README.md)
+
+-----
 * [序言](preface.md)
+
+-----
 * [比特币之道](chapter-philosophy/README.md)
     * [诚信为本](chapter-philosophy/honesty.md)
     * [路线图](chapter-philosophy/roadmap.md)
