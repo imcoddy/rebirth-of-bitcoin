@@ -43,11 +43,11 @@ after_script:
     - git add .
     - git commit -m "Update GitBook By TravisCI With Build $TRAVIS_BUILD_NUMBER"
     - git remote add origin https://${REPO}
-    - git push --force --quiet "https://${TOKEN}@${REPO}" master:gh-pages
+    - git push --force --quiet "https://${GH_TOKEN}@${REPO}" master:gh-pages
 
 
 # 环境变量
 env:
-global:
-# Github Pages
-    - REPO: github.com/imcoddy/rebirth-of-bitcoin.git
+    global:
+    # Github Pages
+        - REPO: github.com/imcoddy/rebirth-of-bitcoin.git
