@@ -1,0 +1,52 @@
+# 指定环境语言
+ language: node_js
+ # 指定sudo权限
+ sudo: required
+ # 指定node版本
+ node_js: stable
+ # 指定缓存模块，缓存可以加速编译
+ cache:
+ directories:
+     - node_modules
+
+ # 邮件通知，这里配置不管成功或是失败都通知
+ notifications:
+ email:
+     recipients:
+     - imcoddy@gmail.com
+     on_success: always # default: change
+     on_failure: always # default: always
+
+ # 构建的分支
+ branches:
+ only:
+     - develop
+
+ # 调整时区
+ before_install:
+ - export TZ='Asia/Shanghai'
+
+ # 安装环境
+ install:
+ - npm install -g gitbook-cli
+ - gitbook install
+
+ # gitbook生成静态文件
+ script:
+ - gitbook build
+
+ after_script:
+ - cd ./_book
+ - git init
+ - git config user.name "imcoddy"
+ - git config user.email "imcoddy@gmail.com"
+ - git add .
+ - git commit -m "Update GitBook By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+-  git remote add origin "https://$GH_TOKEN@github.com/imcoddy/rebirth-of-bitcoin.git"
+ - git push --force --quiet origin gh-pages:gh-pages
+
+ # 环境变量
+ env:
+ global:
+ # Github Pages
+ - GH_REF: github.com/imcoddy/rebirth-of-bitcoin.git
