@@ -28,7 +28,7 @@
 >
 > See the snack machine thread, I outline how a payment processor could verify payments well enough, actually really well (much lower fraud rate than credit cards), in something like 10 seconds or less. If you don’t believe me or don’t get it, I don’t have time to try to convince you, sorry.
 >
-> source: [http://bitcointalk.org/index.php?topic=423.msg3819\#msg3819](http://bitcointalk.org/index.php?topic=423.msg3819#msg3819)
+> source: [https://bitcointalk.org/index.php?topic=423.msg3819\#msg3819](https://bitcointalk.org/index.php?topic=423.msg3819#msg3819)
 
 由于这时候零确认只存在节点的内存池中，并没有被打包上链，有可能会被双花的风险，中本聪将零确认交易称为 “二等居民”，并在 [Snack Machine](https://bitcointalk.org/index.php?topic=423.msg3819#msg3819) 一帖中，给出了他的解决方案：
 

@@ -41,11 +41,15 @@
     "donate",
     "expandable-chapters",
     "ga",
-    "github-buttons",
+    "github",
+    "-image-captions",
+    "lightbox",
+    "-pageview-count",
     "prism",
     "prism-themes",
     "search-pro",
     "splitter",
+    "tbfed-pagefooter",
     "theme-comscore"
   ],
   "pluginsConfig": {
@@ -68,12 +72,20 @@
       "appleTouch": "/images/apple-touch-icon.png"
     },
     "ga": {
-      "token": "UA-XXXX-Y"
+      "token": "UA-135053792-3"
+    },
+    "github": {
+      "url": "https://github.com/imcoddy/rebirth-of-bitcoin"
     },
     "github-buttons": {
       "repo": "https://github.com/imcoddy/rebirth-of-bitcoin",
       "types": ["star", "watch", "fork"],
       "size": "small"
+    },
+    "tbfed-pagefooter": {
+      "copyright": "©2019 - Metanet.press",
+      "modify_label": "Updated at:",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
     },
     "theme-default": {
       "showLevel": true
