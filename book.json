@@ -37,19 +37,22 @@
     "alerts",
     "auto-scroll-table",
     "chapter-fold",
+    "-disqus",
+    "-donate",
     "favicon",
-    "donate",
     "expandable-chapters",
     "ga",
     "github",
     "-image-captions",
     "lightbox",
+    "localized-footer",
+    "myseo",
     "-pageview-count",
     "prism",
     "prism-themes",
     "search-pro",
     "splitter",
-    "tbfed-pagefooter",
+    "-tbfed-pagefooter",
     "theme-comscore"
   ],
   "pluginsConfig": {
@@ -59,6 +62,9 @@
     "anchor-navigation-ex": {
       "multipleH1": false,
       "showLevel": false
+    },
+    "disqus":{
+      "shortName": "imcoddy"
     },
     "donate": {
       "wechat": "/images/donation.png",
@@ -81,6 +87,15 @@
       "repo": "https://github.com/imcoddy/rebirth-of-bitcoin",
       "types": ["star", "watch", "fork"],
       "size": "small"
+    },
+    "localized-footer":{
+      "filename": "./FOOTER.md"
+    },
+    "myseo": {
+      "titlePrefix": "",
+      "titleSuffix": " - Metanet.press",
+      "description": "本项目为「比特币重生：重返创世纪」计划，旨在阐述比特币原始设计的来龙去脉，展现协议稳定与去除人为限制的意义，让读者能以此书为入门参考，了解比特币 (BSV) 的应用与开发，领会中本聪设计的哲学思想，发掘其中鲜为人知的精妙之处，更好地迎接 2020 年 2 月的「创世纪」升级计划的到来。",
+      "keywords": "BSV,BSV社区,BitcoinSV社区,BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,比特币现金,比特币SV,区块链,中本聪愿景"
     },
     "tbfed-pagefooter": {
       "copyright": "©2019 - Metanet.press",
