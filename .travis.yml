@@ -44,7 +44,7 @@ after_script:
     - git init
     - git config user.name "imcoddy"
     - git config user.email "imcoddy@gmail.com"
-    - echo "www.metanet.press" > CNAME
+    - echo "metanet.press" > CNAME
     - git add .
     - git commit -m "Update GitBook By TravisCI With Build $TRAVIS_BUILD_NUMBER"
     - git remote add origin https://${REPO}
