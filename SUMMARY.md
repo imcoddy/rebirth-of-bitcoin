@@ -133,6 +133,7 @@
     * [减半机制](chapter-economics/halving.md)
     * [手续费与流通](chapter-economics/fees.md)
     * [通缩货币？](chapter-economics/deflation.md)
+    * [万链归一](chapter-economics/the-global-chain.md)
 
 -----
 <!-- * [致谢](acknowledgements.md) -->
@@ -145,4 +146,3 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
-

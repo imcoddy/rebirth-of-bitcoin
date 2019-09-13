@@ -106,7 +106,7 @@ Unwriter 在文中，将比特币称为发动机（motor），将比特币看做
 
 > The rotation logic (Bitcoin's algorithm) is deterministic and secure (powered by Proof of Work), making it the perfectly stable piece of technology to power all kinds of useful machines.
 
-简单解释一下，这种动力源要可预测（比如汽油的燃烧产生的动力，是可控的），动力源要安全（由 POW 保证），动力源要稳定。这样就可以驱动机器去运转。
+简单解释一下，这种动力源要可预测（比如汽油的燃烧产生的动力，是可控的），动力源要安全（由 PoW 保证），动力源要稳定。这样就可以驱动机器去运转。
 
 Unwriter 将应用程序称为机器（machine），机器需要动力源来驱动，而相同的动力源可以根据机器的构造不同，产生不同的效果。比如同样品质的汽油，在不同的车上的能耗比不一样。有了一个稳定的动力源，就可以以它为基础构造各种各样的机器，来实现各种各样的功能。
 
