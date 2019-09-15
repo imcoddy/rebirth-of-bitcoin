@@ -15,18 +15,18 @@
 
 -----
 * [比特币基本原理](chapter-how-bitcoin-works/README.md)
-    * [比特币的架构](chapter-how-bitcoin-works/overview.md)
-    * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md)
+    <!-- * [比特币的架构](chapter-how-bitcoin-works/overview.md) -->
+    <!-- * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md) -->
 
 -----
 * [比特币钱包的使用](chapter-wallet/README.md)
-    * [钱包的备份和恢复](chapter-wallet/backup-and-restore.md)
-    * [HD 钱包](chapter-wallet/hd-wallet.md)
-    * [Paymail 协议](chapter-wallet/paymail.md)
-    * [比特币钱包推荐](chapter-wallet/recommendations.md)
-        * [打点钱包](chapter-wallet/ddpurse.md)
-        * [MoneyButton](chapter-wallet/moneybutton.md)
-        * [Simply Cash](chapter-wallet/simply-cash.md)
+    <!-- * [钱包的备份和恢复](chapter-wallet/backup-and-restore.md) -->
+    <!-- * [HD 钱包](chapter-wallet/hd-wallet.md) -->
+    <!-- * [Paymail 协议](chapter-wallet/paymail.md) -->
+    <!-- * [比特币钱包推荐](chapter-wallet/recommendations.md) -->
+    * [打点钱包](chapter-wallet/ddpurse.md)
+    * [MoneyButton](chapter-wallet/moneybutton.md)
+    * [Simply Cash](chapter-wallet/simply-cash.md)
 
 -----
 * [比特币交易](chapter-transaction/README.md)
@@ -39,12 +39,12 @@
     * [比特币签名](chapter-transaction/signature.md)
         * [P2PKH](chapter-transaction/p2pkh.md)
         * [P2SH](chapter-transaction/p2sh.md)
-        * [P2RPH](chapter-transaction/p2rph.md)
         * [P2IP](chapter-transaction/p2ip.md)
+        * [P2RPH](chapter-transaction/p2rph.md)
     * [交易可塑性](chapter-network/malleability.md)
     * [时间锁](chapter-network/timelocks.md)
     * [OP_RETURN](chapter-network/op_return.md)
-    * [广播交易](chapter-transaction/broadcast-transaction.md)
+    <!-- * [广播交易](chapter-transaction/broadcast-transaction.md) -->
 
 -----
 * [比特币区块](chapter-block/README.md)
@@ -125,6 +125,7 @@
     * [纯粹的资本主义](chapter-laws/pure-capitalism.md)
     * [Token 与证券](chapter-laws/token-and-security.md)
     * [电子合同与签名](chapter-laws/signature-in-electronic-contract.md)
+    * [清算与结算](chapter-laws/clearance-and-settlement.md)
 
 -----
 * [比特币的经济学](chapter-economics/README.md)
