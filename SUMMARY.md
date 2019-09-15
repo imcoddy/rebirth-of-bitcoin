@@ -135,6 +135,7 @@
     * [手续费与流通](chapter-economics/fees.md)
     * [通缩货币？](chapter-economics/deflation.md)
     * [万链归一](chapter-economics/the-global-chain.md)
+    * [小额支付](chapter-economics/micropayment.md)
 
 -----
 <!-- * [致谢](acknowledgements.md) -->
