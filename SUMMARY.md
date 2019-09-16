@@ -127,6 +127,7 @@
     * [Token 与证券](chapter-laws/token-and-security.md)
     * [电子合同与签名](chapter-laws/signature-in-electronic-contract.md)
     * [清算与结算](chapter-laws/clearance-and-settlement.md)
+    * [私钥与身份](chapter-laws/keys-and-identities.md)
 
 -----
 * [比特币的经济学](chapter-economics/README.md)
