@@ -69,7 +69,7 @@
 
 -----
 * [比特币网络](chapter-network/README.md)
-    * [什么是点对点网络](chapter-network/peer-to-peer.md)
+    <!-- * [什么是点对点网络](chapter-network/peer-to-peer.md) -->
     * [双重的比特币网络](chapter-network/overlayed-bitcoin-network.md)
     * [IP2IP](chapter-network/ip2ip.md)
     * [支付通道](chapter-network/payment-channel.md)
@@ -79,7 +79,7 @@
 * [比特币挖矿](chapter-mining/README.md)
     * [运行节点](chapter-mining/running-bitcoin-node.md)
     * [工作量证明](chapter-mining/proof-of-work.md)
-    * [MinerID](chapter-mining/miner-id.md)
+    <!-- * [MinerID](chapter-mining/miner-id.md) -->
     * [双重哈希](chapter-mining/double-hash.md)
     * [节点的专业化](chapter-mining/professionalize.md)
     * [小世界网络](chapter-mining/small-world-network.md)
