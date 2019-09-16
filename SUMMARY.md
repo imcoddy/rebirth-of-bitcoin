@@ -14,7 +14,8 @@
     * [中本聪愿景](chapter-philosophy/vision-of-satoshi.md)
 
 -----
-* [比特币基本原理](chapter-how-bitcoin-works/README.md)
+* [比特币基本概念](chapter-how-bitcoin-works/README.md)
+    * [比特币的隐私模型](chapter-how-bitcoin-works/privacy-model.md)
     <!-- * [比特币的架构](chapter-how-bitcoin-works/overview.md) -->
     <!-- * [比特币常见概念](chapter-how-bitcoin-works/basic-concept.md) -->
 
