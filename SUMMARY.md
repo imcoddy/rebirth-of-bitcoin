@@ -3,7 +3,7 @@
 * [简介](README.md)
 
 -----
-<!-- * [序言](preface.md) -->
+* [序言](preface.md)
 
 -----
 * [比特币之道](chapter-philosophy/README.md)
