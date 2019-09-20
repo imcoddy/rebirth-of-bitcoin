@@ -39,6 +39,7 @@
 * 感谢[上海刘晔律师](https://www.weibo.com/p/1005051768963455)，翻译了许多相关文章，提供了法律相关的见解
 * 感谢 [Aaron07](https://aaron67.cc)，记录了一系列比特币的相关技术文章
 * 感谢[黄酥酥](https://www.weibo.com/huanguncle)，提供了不少比特币与社会学的思路
+* 感谢木～龙和 Times ，考证了许多中本聪的相关资料
 * 感谢 Aus.Liu、Asine、TsiMing Ho、王福强、WanSheng 等等 Metanet 的践行者，你们的努力大家看在眼中
 * 感谢 [BSV 骷髅会](https://svskull.club)群友们的一贯支持，BSV 的世界因你们而精彩
 
