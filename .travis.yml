@@ -16,8 +16,8 @@ cache:
 notifications:
     email:
         recipients:
-            - imcoddy@gmail.com
-        on_success: always # default: change
+            - imcoddy+build@gmail.com
+        on_success: change # default: change
         on_failure: always # default: always
 
 # 构建的分支
