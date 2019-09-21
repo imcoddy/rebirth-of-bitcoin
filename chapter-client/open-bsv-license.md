@@ -1,5 +1,7 @@
 # Open BSV license
 
+BSV 的授权许可如下：
+
 https://github.com/bitcoin-sv/bitcoin-sv/blob/master/LICENSE
 
 Open BSV License
@@ -56,3 +58,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+Bitcoin SV(客户端实现)的 Open BSV license 协议由 MIT 协议衍生而得，该协议版权属于 Bitcoin Association。大家可以在这基础上自行开发，开发后需要遵守以下两点：
+
+1，需要保留上述版权说明
+2，只允许在区块高度 556767 上哈希值为 000000000000000001d956714215d96ffc00e0afda4cd0a96c96f8d802b1662b 的链(即 BSV)上使用
+
+这份许可保持了后续分叉的可能性，只要符合现在(PoW 矿工投票)的决策方式即可。
