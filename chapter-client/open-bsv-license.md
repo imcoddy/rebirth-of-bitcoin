@@ -59,9 +59,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Bitcoin SV(客户端实现)的 Open BSV license 协议由 MIT 协议衍生而得，该协议版权属于 Bitcoin Association。大家可以在这基础上自行开发，开发后需要遵守以下两点：
+Bitcoin SV(客户端实现)的 Open BSV license 协议由 MIT 协议衍生而得，该协议版权属于 Bitcoin Association。但这并没有限制大家在此基础上继续自行开发客户端，只需要更改遵守以下两点即可：
 
 1，需要保留上述版权说明
 2，只允许在区块高度 556767 上哈希值为 000000000000000001d956714215d96ffc00e0afda4cd0a96c96f8d802b1662b 的链(即 BSV)上使用
 
-这份许可保持了后续分叉的可能性，只要符合现在(PoW 矿工投票)的决策方式即可。
+这份许可杜绝了 BTC/BCH 借鉴 BSV 的扩容方案，同时保持了今后继续分叉的可能性，如果再次出现分叉，只要该分叉决策符合现在(PoW 矿工投票累积工作量)的决策方式即可。
