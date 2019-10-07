@@ -45,6 +45,7 @@
     "github",
     "-image-captions",
     "lightbox",
+    "livere",
     "localized-footer",
     "myseo",
     "-pageview-count",
@@ -92,6 +93,9 @@
     },
     "localized-footer":{
       "filename": "./FOOTER.md"
+    },
+    "livere": {
+      "uid": "MTAyMC80Njk4NS8yMzQ4NQ=="
     },
     "myseo": {
       "titlePrefix": "",
