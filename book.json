@@ -37,7 +37,7 @@
     "alerts",
     "auto-scroll-table",
     "chapter-fold",
-    "disqus",
+    "-disqus",
     "-donate",
     "favicon",
     "expandable-chapters",
