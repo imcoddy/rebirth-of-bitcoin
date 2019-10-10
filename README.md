@@ -2,7 +2,7 @@
 
 ![「比特币重生：重返创世纪」计划](images/bitcoin-forks.png)
 
-比特币诞生至今，已经过了十个年头。在此期间，因比特币几年的 [扩容争议](http://www.bsvers.com/43.html) 无果，比特币分叉为 Bitcoin Coin 和 Bitcoin Cash，随后又分叉为 Bitcoin ABC 和 Bitcoin SV。
+比特币诞生至今，已经过了十个年头。在此期间，因比特币几年的 [扩容争议](http://www.bsvers.com/43.html) 无果，比特币分叉为 Bitcoin Core 和 Bitcoin Cash，随后又分叉为 Bitcoin ABC 和 Bitcoin SV。
 
 尽管比特币的 Ticker 多次变更，Bitcoin SV，即原版的比特币，旨在恢复原始比特币协议，保持其协议稳定且允许其大规模扩容。Bitcoin SV 将秉承维护中本聪在 2008 年白皮书《[比特币：一个点对点电子现金系统](https://bitcoinsv.io/bitcoin/)》中所阐述的愿景。
 
