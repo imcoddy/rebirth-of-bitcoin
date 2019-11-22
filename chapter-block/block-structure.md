@@ -21,7 +21,8 @@
 
 当你托运行李的时候，航空公司会在你的箱上贴一个标签，记录一些必要的基本信息，方便快速识别。
 
-<div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/nxjmrBV.png)</div>
+![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/nxjmrBV.png)
+
 用区块存储交易也是类似的，代码见 [block.h#L61](https://github.com/bitcoin-sv/bitcoin-sv/blob/d9b12a23db/src/primitives/block.h#L61)，区块结构（序列化后）为
 
 长度（字节） | 描述
@@ -69,8 +70,8 @@
 
 ![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/CPsvad1.png)
 
-1. 对区块头数据做 SHA256，得到 [S1 的值](https://www.fileformat.info/tool/hash.htm?hex=0100000050120119172a610421a6c3011dd330d9df07b63616c2cc1f1cd00200000000006657a9252aacd5c0b2940996ecff952228c3067cc38d4885efb5a4ac4247e9f337221b4d4c86041b0f2b5710)`00844eeb8713eb62bc33df34ca0cfa7af2ee152a6b16788fd3f2fea69861f3c8`
-2. 对 S1 做 SHA256，得到 [S2 的值](https://www.fileformat.info/tool/hash.htm?hex=00844eeb8713eb62bc33df34ca0cfa7af2ee152a6b16788fd3f2fea69861f3c8)`06e533fd1ada86391f3f6c343204b0d278d4aaec1c0b20aa27ba030000000000`
+1. 对区块头数据做 SHA256，得到 [S1 的值](https://www.fileformat.info/tool/hash.htm?hex=0100000050120119172a610421a6c3011dd330d9df07b63616c2cc1f1cd00200000000006657a9252aacd5c0b2940996ecff952228c3067cc38d4885efb5a4ac4247e9f337221b4d4c86041b0f2b5710) `00844eeb8713eb62bc33df34ca0cfa7af2ee152a6b16788fd3f2fea69861f3c8`
+2. 对 S1 做 SHA256，得到 [S2 的值](https://www.fileformat.info/tool/hash.htm?hex=00844eeb8713eb62bc33df34ca0cfa7af2ee152a6b16788fd3f2fea69861f3c8) `06e533fd1ada86391f3f6c343204b0d278d4aaec1c0b20aa27ba030000000000`
 3. 按字节翻转 S2，得到区块哈希 `000000000003ba27aa200b1cecaad478d2b00432346c3f1f3986da1afd33e506`
 
 关于 `nBits` 和 `nNonce` 字段的含义，下篇文章介绍。
@@ -81,7 +82,8 @@ Merkle 树是一棵二叉树，用于 ** 归纳 ** 一个区块中的所有交�
 
 Merkle 树会生成 ** 整个交易集合的数字指纹 **，形如
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0903.png)</div>
+![merkle-tree](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0903.png)
+
 交易会被放在 Merkle 树最底层的叶子节点上，如图所示，如果交易的个数是奇数，会复制最后一笔交易补齐，其中：
 
 - $H_A = SHA256(SHA256(Tx\ A))$
@@ -95,7 +97,8 @@ Merkle 树将区块头和区块中的交易关联了起来，如果区块中的�
 
 使用 Merkle 树的另一个好处是，它提供了一种校验区块是否存在某笔交易的高效途径。对于下面这棵 Merkle 树，
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0905.png)</div>
+![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0905.png)
+
 为了证明交易 K 在区块中，可以用 $H_L$、$H_{IJ}$、$H_{MNOP}$ 和 $H_{ABCDEFGH}$ 这四个哈希值构造一条 “Merkle 路径”，只需 128 字节，任何人都可以用这条路径，验证区块包含交易 K。
 
 ## Coinbase
