@@ -54,7 +54,7 @@ Metanet 协议的技术摘要现在可在 [nChain 网站](https://nchain.com/en/
 
 要讨论 Metanet 协议，我们需要理解谈论有向无环图（DAG）的意义。
 
-不可避免的是，我们在这里必须涉足 [* 图论 *](https://en.wikipedia.org/wiki/Graph_theory)——数学的一个分支，普遍认为起源于莱昂哈德 · 欧拉（*Leonhard Euler*）。欧拉的[《柯尼斯堡七桥问题》](http://eulerarchive.maa.org/docs/originals/E053.pdf) 这篇论文实际上催生了对图形结构的科学研究。
+不可避免的是，我们在这里必须涉足 [* 图论 *](https://en.wikipedia.org/wiki/Graph_theory)——数学的一个分支，普遍认为起源于莱昂哈德 · 欧拉（*Leonhard Euler*）。欧拉的[《柯尼斯堡七桥问题》](https://eulerarchive.maa.org/docs/originals/E053.pdf) 这篇论文实际上催生了对图形结构的科学研究。
 
 当我们使用图这个术语时，在图论的上下文中，我们通常指的是由节点（也称为顶点）和边组成的任何结构。这里的术语可能有些生僻，但我们所说的 “节点” 实际上是指一些对象，“边”是指一对节点之间的某种连接。
 

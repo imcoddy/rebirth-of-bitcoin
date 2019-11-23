@@ -312,6 +312,6 @@ P2PK 也是合法的交易类型，比 P2PKH 更简单，但出于安全方面�
 # 参考
 
 - 精通比特币（第二版）[译文](https://wizardforcel.gitbooks.io/masterbitcoin2cn/content/) [原文](https://github.com/bitcoinbook/bitcoinbook/)
-- [learn me a bitcoin, P2PK](http://learnmeabitcoin.com/glossary/p2pk)
+- [learn me a bitcoin, P2PK](https://learnmeabitcoin.com/glossary/p2pk)
 - [Bitcoin P2PKH Transaction Breakdown](https://medium.com/coinmonks/bitcoin-p2pkh-transaction-breakdown-bb663034d6df)
 - [bitcore library API #Script](https://bitcore.io/api/lib/script)

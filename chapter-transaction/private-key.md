@@ -248,7 +248,7 @@ func main() {
 - [椭圆曲线密码学](https://zh.wikipedia.org/wiki/% E6% A4% AD% E5%9C%86% E6%9B% B2% E7% BA% BF% E5% AF%86% E7% A0%81% E5% AD% A6)
 - [椭圆曲线加密算法](https://juejin.im/post/5a67f3836fb9a01c9b661bd3)
 - [ECC 椭圆曲线加密算法：介绍](https://zhuanlan.zhihu.com/p/36326221)
-- [SEC 2: Recommended Elliptic Curve Domain Parameters](http://www.secg.org/sec2-v2.pdf)
+- [SEC 2: Recommended Elliptic Curve Domain Parameters](https://www.secg.org/sec2-v2.pdf)
 - [How to convert Private Key WIF Compressed start with a 'L' to Private Key WIF starts with a '5'](https://www.reddit.com/r/Bitcoin/comments/7fptly/how_to_convert_private_key_wif_compressed_start/)
 - [package secp256k1](https://godoc.org/github.com/decred/dcrd/dcrec/secp256k1)
 - 精通比特币（第二版）[译文](https://wizardforcel.gitbooks.io/masterbitcoin2cn/content/) [原文](https://github.com/bitcoinbook/bitcoinbook/)

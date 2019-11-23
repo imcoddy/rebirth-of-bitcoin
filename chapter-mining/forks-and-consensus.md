@@ -73,7 +73,7 @@ Office Word 2007 可以打开 Office Word 2003 创建的 doc 文档，是向后�
 
 ---
 - 精通比特币（第二版）[译文](https://wizardforcel.gitbooks.io/masterbitcoin2cn/content/) [原文](https://github.com/bitcoinbook/bitcoinbook/)
-- [有关共识和分叉 - 硬分叉和软分叉有什么区别？ (Mike Hearn)](http://8btc.com/thread-28748-1-1.html)
+- [有关共识和分叉 - 硬分叉和软分叉有什么区别？ (Mike Hearn)](https://8btc.com/thread-28748-1-1.html)
 - [On consensus and forks](https://medium.com/@octskyward/on-consensus-and-forks-c6a050c792e7)
 
 

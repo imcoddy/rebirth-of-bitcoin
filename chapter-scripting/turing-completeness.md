@@ -644,7 +644,7 @@ Wolfram 猜测，2 状态 - 3 符号的图灵机是通用图灵机（Wolfram，2
 [1] For details see Patent filing XXX. Other loop constructs include OP_WhileLoop, OP_Case, …
 [2] https://www.quora.com/Why-is-Bitcoin-not-Turing-complete
 [3] https://en.bitcoin.it/wiki/Script
-[4] http://www.nature.com/news/2007/071024/full/news.2007.190.html
+[4] https://www.nature.com/news/2007/071024/full/news.2007.190.html
 
 [A1]Should this be UTM?
 [A2]Extend this theory or this demonstration?

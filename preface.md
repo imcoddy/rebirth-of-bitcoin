@@ -35,7 +35,7 @@
 
 本书的整理得到了许多人的支持，在此一致感谢。
 
-* 感谢 [Mempool.com](http://mempool.com/) 的矿工哲亮，促成决定整理此书的灵感
+* 感谢 [Mempool.com](https://mempool.com/) 的矿工哲亮，促成决定整理此书的灵感
 * 感谢[上海刘晔律师](https://www.weibo.com/p/1005051768963455)，翻译了许多相关文章，提供了法律相关的见解
 * 感谢 [Aaron67](https://aaron67.cc)，记录了一系列比特币的相关技术文章
 * 感谢[黄酥酥](https://www.weibo.com/huanguncle)，提供了不少比特币与社会学的思路

@@ -4,7 +4,7 @@
 
 在数学、物理学和社会学中，小世界网络是一种数学上图的类型，在这种图中大部分的结点不与彼此邻接，但大部分结点可以从任一其他点经少数几步就可到达。若将一个小世界网络中的点代表一个人，而连结线代表人与人认识，则这小世界网络可以反映陌生人由彼此共同认识的人而连结的小世界现象。
 
-![small-world-network](http://i1375.photobucket.com/albums/ag455/imcoddy/bitcoin/small-world-network_zpspsjygfkn.png)
+![small-world-network](https://i1375.photobucket.com/albums/ag455/imcoddy/bitcoin/small-world-network_zpspsjygfkn.png)
 
 比特币节点组成的网络是一个小世界网络，这是论文《[Exploring the Bitcoin Network](https://www.researchgate.net/publication/262562539_Exploring_the_Bitcoin_Network)》中得到的结论:
 
@@ -18,7 +18,7 @@
 
 在谈论网络拓扑结构的时候，人们通常会认为是以下几种形式。
 
-![Centralised-decentralised-and-distributed-networks](http://i1375.photobucket.com/albums/ag455/imcoddy/bitcoin/Centralised-decentralised-and-distributed-networks-Baran-in-Barabasi-2003_zpsxnpqulzx.png)
+![Centralised-decentralised-and-distributed-networks](https://i1375.photobucket.com/albums/ag455/imcoddy/bitcoin/Centralised-decentralised-and-distributed-networks-Baran-in-Barabasi-2003_zpsxnpqulzx.png)
 
 作为一个去中心化的网络，比特币网络很容易让人认为它是处于上图中第二和第三种状态之间。这样的网络结构也被称为 [Mesh 网络](https://en.wikipedia.org/wiki/Mesh_networking)。在这种状态下，平均每十分钟一个区块要传播至全网，需要通过若干节点的几跳（相邻节点的一次传递叫一个跳）的传递，才能使得区块从网络的一端传递至另一端。
 

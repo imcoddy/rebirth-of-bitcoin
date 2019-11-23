@@ -169,7 +169,7 @@ e9c3dd0c07aac76179ebc76a6c78d4d67c6c160a
 05 e9c3dd0c07aac76179ebc76a6c78d4d67c6c160a
 
 # S2 = SHA256(SHA256(S1))
-# http://bit.ly/2RoiDBu
+# https://bit.ly/2RoiDBu
 7f297f3156a14d114af23b33c339817a1241afcb52a154d19683c67c538b7278
 
 # S2 的前 4 字节是 Checksum

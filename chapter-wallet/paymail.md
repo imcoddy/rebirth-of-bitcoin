@@ -40,34 +40,34 @@ Paymail 协议的目标是：
 * 安全和策略管理
 * 可扩展和被发现的能力
 
-##[bsvalias 协议](http://bsvalias.org/index.html#bsvalias)
+##[bsvalias 协议](https://bsvalias.org/index.html#bsvalias)
 
 相关协议族统称为 `bsvalias` 协议。在撰写本文时，这些包括：
 
-* [BRFC 规格](http://bsvalias.org/01-brfc-specifications.html)
-* [服务发现](http://bsvalias.org/02-service-discovery.html)
-* [公钥基础设施](http://bsvalias.org/03-public-key-infrastructure.html)
-* [付款地址](http://bsvalias.org/04-payment-addressing.html)
+* [BRFC 规格](https://bsvalias.org/01-brfc-specifications.html)
+* [服务发现](https://bsvalias.org/02-service-discovery.html)
+* [公钥基础设施](https://bsvalias.org/03-public-key-infrastructure.html)
+* [付款地址](https://bsvalias.org/04-payment-addressing.html)
 
-##[ Paymail](http://bsvalias.org/index.html#Paymail)
+##[ Paymail](https://bsvalias.org/index.html#Paymail)
 
 **Paymail** 是执行以下协议的名称：
 
-* [服务发现](http://bsvalias.org/02-service-discovery.html)
-* [公钥基础设施](http://bsvalias.org/03-public-key-infrastructure.html)
-* [基本地址解析](http://bsvalias.org/04-01-basic-address-resolution.html) 从 [支付解决](http://bsvalias.org/04-payment-addressing.html) 方案组
+* [服务发现](https://bsvalias.org/02-service-discovery.html)
+* [公钥基础设施](https://bsvalias.org/03-public-key-infrastructure.html)
+* [基本地址解析](https://bsvalias.org/04-01-basic-address-resolution.html) 从 [支付解决](https://bsvalias.org/04-payment-addressing.html) 方案组
 
 该 **Paymail** 品牌被保留用于产品和服务，在最低限度，实现每个以上。
 
-##[扩展协议](http://bsvalias.org/index.html#extension-protocols)
+##[扩展协议](https://bsvalias.org/index.html#extension-protocols)
 
-根据 [BRFC 规范](http://bsvalias.org/01-brfc-specifications.html) 中的定义，任何人都可以建议扩展 `bsvalias` 和付费邮件协议，并且根据服务发现协议的 [能力发现](http://bsvalias.org/02-03-capability-discovery.html) 部分，实现可以声明对扩展的支持以允许跨钱包过程。[](http://bsvalias.org/02-service-discovery.html)
+根据 [BRFC 规范](https://bsvalias.org/01-brfc-specifications.html) 中的定义，任何人都可以建议扩展 `bsvalias` 和付费邮件协议，并且根据服务发现协议的 [能力发现](https://bsvalias.org/02-03-capability-discovery.html) 部分，实现可以声明对扩展的支持以允许跨钱包过程。[](https://bsvalias.org/02-service-discovery.html)
 
 扩展协议是未包含在上面定义的核心 Paymail 集中的协议的集合，但是它们与 `bsvalias` 协议和 Paymail 实现完全兼容。目前值得注意的例子包括：
 
-* [发件人验证](http://bsvalias.org/04-02-sender-validation.html)
-* [接收者批准](http://bsvalias.org/04-03-receiver-approvals.html)
-* [PayTo 协议前缀](http://bsvalias.org/04-04-payto-protocol-prefix.html)
+* [发件人验证](https://bsvalias.org/04-02-sender-validation.html)
+* [接收者批准](https://bsvalias.org/04-03-receiver-approvals.html)
+* [PayTo 协议前缀](https://bsvalias.org/04-04-payto-protocol-prefix.html)
 * MultiSig 授权
 * 阈值签名组秘密设置和消息签名
 * 付款渠道

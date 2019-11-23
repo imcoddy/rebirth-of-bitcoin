@@ -191,8 +191,8 @@ t.second = 10;  // 00 00 00 0a
 
 所以，字节流传输时，还需要定义字节的排列模式，这是另一个很有意思的话题，称为 ** 字节序 **（Endianness），下面是一些资料和讨论。
 
-- [理解字节序](http://www.ruanyifeng.com/blog/2016/11/byte-order.html)
-- [Little Endian, The order of bytes that a computer like to read in.](http://learnmeabitcoin.com/glossary/little-endian)
+- [理解字节序](https://www.ruanyifeng.com/blog/2016/11/byte-order.html)
+- [Little Endian, The order of bytes that a computer like to read in.](https://learnmeabitcoin.com/glossary/little-endian)
 - [What would you change about the Bitcoin protocol?](https://bitcointalk.org/index.php?topic=4278.0)
 
 比特币系统中，** 除了解锁脚本和锁定脚本 **，其他部分均使用 ** 小端模式 ** 编码，认为 ** 先收到的字节为数据的低位字节 **。
@@ -349,6 +349,6 @@ ffffffff
 - 精通比特币（第二版）[译文](https://wizardforcel.gitbooks.io/masterbitcoin2cn/content/) [原文](https://github.com/bitcoinbook/bitcoinbook/)
 - [Transaction](https://en.bitcoin.it/wiki/Transaction)
 - [Protocol documentation #Variable length integer](https://en.bitcoin.it/wiki/Protocol_documentation#Variable_length_integer)
-- [VarInt - A format for indicating the size of upcoming data](http://learnmeabitcoin.com/glossary/varint)
+- [VarInt - A format for indicating the size of upcoming data](https://learnmeabitcoin.com/glossary/varint)
 - [TxBinaryMap, Bitcoin Wiki](https://en.bitcoin.it/wiki/File:TxBinaryMap.png)
-- [Coinbase Transaction, A transaction used to claim a block reward.](http://learnmeabitcoin.com/glossary/coinbase-transaction)
+- [Coinbase Transaction, A transaction used to claim a block reward.](https://learnmeabitcoin.com/glossary/coinbase-transaction)

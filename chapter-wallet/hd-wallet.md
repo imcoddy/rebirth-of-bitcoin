@@ -81,7 +81,7 @@ L+L32=33L32=11×3L32L+L32=33L32=11×3L32
     5e5d507dc5d543a8c7415656dac4ba0c
 
     # S2 = SHA256(S1)
-    # http://bit.ly/2Hv5Loe
+    # https://bit.ly/2Hv5Loe
     055a1b4dc3af3267362e5d89b707fac6a94ef40a7be5f20f0940de178f01ea33
 
     # 取高 4 位作为校验和
@@ -494,7 +494,7 @@ HD 钱包的幕后细节涉及到很多内容，希望这篇文章能帮你理�
 # 参考
 
 * 精通比特币（第二版）[译文](https://wizardforcel.gitbooks.io/masterbitcoin2cn/content/) [原文](https://github.com/bitcoinbook/bitcoinbook/)
-* [PBKDF2 算法概述](http://www.voidcn.com/article/p-vdtfkabe-nq.html)
+* [PBKDF2 算法概述](https://www.voidcn.com/article/p-vdtfkabe-nq.html)
 * [理解开发 HD 钱包涉及的 BIP32、BIP44、BIP39](https://learnblockchain.cn/2018/09/28/hdwallet/)
 * [数字货币钱包 - 助记词 及 HD 钱包密钥原理](https://zhuanlan.zhihu.com/p/34184347)
 * [ELI5: What’s the difference between a child-key and a hardened child-key in BIP32](https://bitcoin.stackexchange.com/questions/37488/eli5-whats-the-difference-between-a-child-key-and-a-hardened-child-key-in-bip3)

@@ -83,7 +83,7 @@ A 在发起这笔交易的时候，必须把签过名的交易单尽量地广播
 
 数学上怎样保证挖矿的过程需要消耗大量的 CPU 时间？并只有很小的几率成功？
 
-这里用到一个叫做 [Hashcash](http://en.wikipedia.org/wiki/Hashcash) 的系统。它最早是为了改善垃圾邮件的问题被发明出来的。
+这里用到一个叫做 [Hashcash](https://en.wikipedia.org/wiki/Hashcash) 的系统。它最早是为了改善垃圾邮件的问题被发明出来的。
 
 就是给一段特定信息（比如这封 email 是从谁发给谁）加一个特定的 hash 头。这个 hash 头需要大量的 CPU 时间计算出来。发 spam 的人没有那么多 CPU 时间为群发的每一封 email 计算一个符合要求的 hash 头，所以认为有这个合法 hash 头的 email 不太可能是 spam （花了 CPU 时间在上面）
 

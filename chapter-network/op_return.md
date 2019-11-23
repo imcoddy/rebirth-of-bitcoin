@@ -64,9 +64,9 @@ Bitcoin SV（BSV）一般也限制到 220 字节，但根据 [Shadders](https://
 
 通过 `OP_RETURN`，数据可以被优雅的埋进账本中，下面是一些有意思的尝试。
 
-- [Omni Layer](http://www.omnilayer.org/)，基于 Bitcoin Core 的 Token 发行方案
+- [Omni Layer](https://www.omnilayer.org/)，基于 Bitcoin Core 的 Token 发行方案
   - [在比特币上发代币的基本原理 ——omni 协议发代币的通俗解释](https://zhuanlan.zhihu.com/p/40062558)
-- [Wormhole](http://wormhole.cash/)，基于 Bitcoin Cash 的 Token 发行方案
+- [Wormhole](https://wormhole.cash/)，基于 Bitcoin Cash 的 Token 发行方案
   - [Wormhole 虫洞项目信息汇总](https://hiblockchain.io/topics/122)
 - [Bitcoin Files Protocol](https://github.com/simpleledger/slp-specifications/blob/master/bitcoinfiles.md)，在比特币账本中存储文件
   - [Bitcoinfile 文件存储协议 (中文版)](https://hiblockchain.io/topics/157)
