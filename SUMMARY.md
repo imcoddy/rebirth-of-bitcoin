@@ -1,6 +1,6 @@
 # Summary
 
-* [简介](README.md)
+* [比特币重生计划：重返创世纪](README.md)
 
 -----
 * [序言](preface.md)
