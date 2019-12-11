@@ -31,7 +31,7 @@ Base58Check 在编码过程中加入了校验和，在最后使用 Base58，是�
 3. 在 S1 后附上 Checksum，得到 S3
 4. 对 S3 做 Base58 编码，得到结果
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0406.png)</div>
+![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0406.png)
 
 对于不同类型的数据，在做 Base58Check 编码时会添加不同的版本前缀，以产生易于辨识的不同结果。
 
@@ -114,7 +114,7 @@ ECC 是一种 [非对称加密算法](https://hiblockchain.io/topics/98)，基�
 
 $y^2 = x^3 - x + 1$ 定义了一条椭圆曲线，函数图像如下。
 
-<div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/0MGgi5G.png)</div>
+![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/0MGgi5G.png)
 
 比特币使用的椭圆曲线，为
 
@@ -138,7 +138,7 @@ $$y^2 = x^3 + 7 \pmod p$$
 1. 过点 p1 和 p2 做直线与椭圆曲线相交点 q
 2. 以 X 轴对称翻转点 q，得到点 p
 
-<div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/5FstmO4.png)</div>
+![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/5FstmO4.png)
 
 如果 p1 和 p2 为同一个点，则过 p1 和 p2 的连线，变成了过该点的椭圆曲线的切线。使用 [这个工具](https://www.desmos.com/calculator/ialhd71we3)，可以有更多可视化的直观体验。
 
@@ -148,7 +148,7 @@ $$k \times p = \underbrace{p + p + ... + p}\_{k}$$
 
 下图展示了从椭圆曲线上的点 G，计算 2G、4G、8G 的操作。
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0404.png)</div>
+![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0404.png)
 
 * 注意，为了有直观的理解，图片中的椭圆曲线都是连续的。比特币使用的 Secp256k1 曲线，其图像并不连续，但它们的数学原理是相同的。*
 

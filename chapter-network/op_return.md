@@ -58,14 +58,14 @@ Bitcoin SV（BSV）一般也限制到 220 字节，但根据 [Shadders](https://
 
 交易 `335724b8b1a399589dfc470e474a415dc04e20d7c72e03903a2edb889ee47fde`（我隐藏了输入和第一个输出）为
 
-<div style="width: 50%; margin: auto">![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/yb7DOF1.png)</div>
+![Imgur](https://aaron67-public.oss-cn-beijing.aliyuncs.com/yb7DOF1.png)
 
 你可以用 [这个工具](https://software.hixie.ch/utilities/cgi/unicode-decoder/utf8-decoder)，看看十六进制的 UTF-8 编码 `e4bda0e5a5bdefbc8ce4b896e7958ce38082` 是什么。 😋
 
 通过 `OP_RETURN`，数据可以被优雅的埋进账本中，下面是一些有意思的尝试。
 
 - [Omni Layer](https://www.omnilayer.org/)，基于 Bitcoin Core 的 Token 发行方案
-  - [在比特币上发代币的基本原理 ——omni 协议发代币的通俗解释](https://zhuanlan.zhihu.com/p/40062558)
+  - [在比特币上发代币的基本原理 ——Omni 协议发代币的通俗解释](https://zhuanlan.zhihu.com/p/40062558)
 - [Wormhole](https://wormhole.cash/)，基于 Bitcoin Cash 的 Token 发行方案
   - [Wormhole 虫洞项目信息汇总](https://hiblockchain.io/topics/122)
 - [Bitcoin Files Protocol](https://github.com/simpleledger/slp-specifications/blob/master/bitcoinfiles.md)，在比特币账本中存储文件

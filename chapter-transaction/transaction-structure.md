@@ -279,7 +279,7 @@ ffffffff
 
 Alice 去 Bob 的咖啡店支付 0.015 比特币购买咖啡，生成了交易 `0627052b6f28912f2703066a912ea577f2ce4da4caa5a5fbd8a57286c345c2f2`。
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0204.png)</div>
+![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0204.png)
 
 下面是这笔交易序列化后的样子（我替你加了换行），你能从中找到各个字段的信息吗？
 

@@ -31,29 +31,29 @@
 
 1. 菜单 `File -> New/Restore`，通过导入助记词的方式新建一个 “标准” 钱包
 
-<div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234834.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234834.png)
 
-<div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522233612.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522233612.png)
 
-<div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522233706.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522233706.png)
 
 2. 在 [1] 处填写你从 Centbee 中备份的助记词，打开 Options 并勾选 “指定用户密语” 和 “这是 BIP39 助记词” 两项
 
-<div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234020.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234020.png)
 
 3. 设置用户自定义的密语，即填入你在 Centbee 中设置的 PIN 码
 
-<div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234113.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234113.png)
 
 4. 设置衍生路径
 
-<div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234142.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234142.png)
 
 5. 对比一下地址，完成钱包导入
 
-<div style="width: 50%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234411.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522234411.png)
 
-<div style="width: 30%; margin: auto">![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522235714.png)</div>
+![](https://aaron67-public.oss-cn-beijing.aliyuncs.com/20190522235714.png)
 
 ## 总结
 
