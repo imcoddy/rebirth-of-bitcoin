@@ -36,6 +36,12 @@ PS：如果你是在手机上看本网站，记得**使用屏幕左上角的目�
 1MzziGBa7tNNzMwVJMPEjAfM1wRcvSGZu5
 ```
 
+## 邱少闲聊
+
+本书将专注于比特币的基本知识科普，内容会相对比较正经严肃，喜欢欢快活跃的，欢迎关注微信公众号【邱少闲聊Metanet】，听我从别的视角讲述比特币的八卦 :)
+
+![邱少闲聊Metanet](/images/metanetchat.png)
+
 ## 版权说明
 
 [![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-nd.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)
