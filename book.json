@@ -80,7 +80,7 @@
     "favicon": {
       "shortcut": "/images/favicon.ico",
       "bookmark": "/images/favicon.ico",
-      "appleTouch": "/images/apple-touch-icon.png"
+      "appleTouch": "/images/logo.png"
     },
     "ga": {
       "token": "UA-135053792-3"
