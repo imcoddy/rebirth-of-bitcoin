@@ -110,7 +110,7 @@ WIF 压缩和不压缩两种格式都使用同样的版本前缀，唯一的区�
 
 要理解比特币公钥的计算细节，需要先了解一些 ECC 的背景知识。
 
-ECC 是一种 [非对称加密算法](https://hiblockchain.io/topics/98)，基于 [椭圆曲线](https://zh.wikipedia.org/wiki/% E6% A4% AD% E5%9C%86% E6%9B% B2% E7% BA% BF) 上的离散对数数学问题。
+ECC 是一种 [非对称加密算法](https://zhuanlan.zhihu.com/p/101907402)，基于椭圆曲线上的离散对数数学问题。
 
 $y^2 = x^3 - x + 1$ 定义了一条椭圆曲线，函数图像如下。
 

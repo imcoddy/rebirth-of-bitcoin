@@ -67,9 +67,9 @@ Bitcoin SV（BSV）一般也限制到 220 字节，但根据 [Shadders](https://
 - [Omni Layer](https://www.omnilayer.org/)，基于 Bitcoin Core 的 Token 发行方案
   - [在比特币上发代币的基本原理 ——Omni 协议发代币的通俗解释](https://zhuanlan.zhihu.com/p/40062558)
 - [Wormhole](https://wormhole.cash/)，基于 Bitcoin Cash 的 Token 发行方案
-  - [Wormhole 虫洞项目信息汇总](https://hiblockchain.io/topics/122)
+  - [Wormhole 虫洞项目信息汇总](https://bitkan.com/zh/ksite/articles/14190)
 - [Bitcoin Files Protocol](https://github.com/simpleledger/slp-specifications/blob/master/bitcoinfiles.md)，在比特币账本中存储文件
-  - [Bitcoinfile 文件存储协议 (中文版)](https://hiblockchain.io/topics/157)
+  - [Bitcoinfile 文件存储协议 (中文版)](https://zhuanlan.zhihu.com/p/54146706)
 - [Memo](https://memo.cash/protocol)，运行在 [Bitcoin Cash](https://memo.cash/) 和 [Bitcoin SV](https://sv.memo.cash/) 上的微博
   - [基于 BCH 的永不删帖的去中心化 “微博”](https://www.jianshu.com/p/a24c1a8fe25e)
 

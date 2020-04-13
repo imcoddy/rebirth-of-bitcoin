@@ -24,7 +24,7 @@
 
 在这个模型中，银行 (或者其他 TTP) 会记录你的每一个行动，每一笔交易，并且可以建模你的所有消费行为。在 Visa 和万事达看来，这些信息可以让他们知道需要把消费者推向何方，从而欠下更多债务。它允许 TTPs 持有足够的信息来控制市场，操纵消费者。
 
-这些 [数据是价值](https://www.ey.com/Publication/vwLUAssets/EY_-_The_upside_of_compliance/%2524FILE/EY-The-upside-of-compliance-Steven-Lewis.pdf)，也是信息。作为信息，他们可以直接做广告，并高价出售。这就是陈旧的、不安全的、可操纵的、前隐私模式的结果。比特币 core, 还有其他如闪电、Plasma 等复制了这个模式。现在，[你的信息是这家银行拥有的最有价值的东西，](https://www.globalbankingandfinance.com/why-data-has-become-banks-most-important-commodity/) 这就是他们反对比特币的原因。他们不想失去它。这就是为什么我们看到比特币被劫持，为什么他们试图告诉你它不安全，不是隐私的，以及你听到的所有其他谎言的原因。这些人希望保留你的数据，因为这些数据有价值。
+这些 [数据是价值](https://www.ey.com/Publication/vwLUAssets/EY_-_The_upside_of_compliance/$FILE/EY-The-upside-of-compliance-Steven-Lewis.pdf)，也是信息。作为信息，他们可以直接做广告，并高价出售。这就是陈旧的、不安全的、可操纵的、前隐私模式的结果。比特币 core, 还有其他如闪电、Plasma 等复制了这个模式。现在，[你的信息是这家银行拥有的最有价值的东西，](https://www.globalbankingandfinance.com/why-data-has-become-banks-most-important-commodity/) 这就是他们反对比特币的原因。他们不想失去它。这就是为什么我们看到比特币被劫持，为什么他们试图告诉你它不安全，不是隐私的，以及你听到的所有其他谎言的原因。这些人希望保留你的数据，因为这些数据有价值。
 
 传统的银行模式通过限制相关方和可信第三方对信息的访问来保护隐私。这也是今天的 Bitpay、 Coinbase 和大多数比特币公司系统。
 
