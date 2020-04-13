@@ -37,6 +37,7 @@
     "alerts",
     "auto-scroll-table",
     "chapter-fold",
+    "canonical-link",
     "-disqus",
     "-donate",
     "favicon",
@@ -67,6 +68,9 @@
     "anchor-navigation-ex": {
       "multipleH1": false,
       "showLevel": false
+    },
+    "canonical-link": {
+      "baseURL": "https://rebirth.metanet.press/"
     },
     "disqus":{
       "shortName": "imcoddy"
@@ -150,6 +154,6 @@
       "showLevel": true
     }
   },
-  "title": "比特币重生：重返创世纪",
+  "title": "比特币重生计划：重返创世纪",
   "variables": {}
 }
