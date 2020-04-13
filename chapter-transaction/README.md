@@ -17,7 +17,7 @@
 
 比特币的交易，使用 [复式记账法](https://zh.wikipedia.org/wiki/% E5% A4%8D% E5% BC%8F% E7% B0% BF% E8% AE% B0)（复式簿记，double-entry bookkeeping）的形式，输入和输出比特币总量的差值，是隐含在这笔交易中的手续费。
 
-![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0203.png)
+![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0203.png)
 
 对交易的双方：
 
@@ -47,7 +47,7 @@ verify(pk, msg, sig) == true
 
 Alice 用现金从 Joe 那里换了点比特币，之后去 Bob 的咖啡店支付比特币购买咖啡。
 
-![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0204.png)
+![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0204.png)
 
 比特币的每笔交易，都用一个哈希值来索引和标识。
 

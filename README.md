@@ -44,6 +44,6 @@ PS：如果你是在手机上看本网站，记得**使用屏幕左上角的目�
 
 ## 版权说明
 
-[![Creative Commons License](https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-nc-nd.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)
+[![Creative Commons License](/images/by-nc-nd.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)
 
 Rebirth of Bitcoin: Back to Genesis 《比特币重生：重返创世纪》一书以 [署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)  的许可协议发布，并预计于 2021 年前(即 Bitcoin SV 的 「[创世纪](https://bitcoinsv.io/2019/04/17/the-roadmap-to-genesis-part-1/)」升级后的一年之内)以 [署名-相同方式共享 4.0 国际 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)  方式开放许可授权。
