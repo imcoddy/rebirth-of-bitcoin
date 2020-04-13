@@ -260,9 +260,9 @@ P2PKH 的解锁脚本中除了包含数字签名，还包含公钥。
 
 下图模拟了这类脚本的执行过程，不再赘述，操作码的定义请自行查阅 [说明书](https://en.bitcoin.it/wiki/Script#Opcodes)。
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0605.png)</div>
+<div style="width: 50%; margin: auto">![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0605.png)</div>
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0606.png)</div>
+<div style="width: 50%; margin: auto">![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0606.png)</div>
 
 注意到，签名的最后一个字节 `0x01`，被解码成了标记 `[ALL]`，它标识了签名的具体类型（SIGHASH，Signature Hash Types）。
 

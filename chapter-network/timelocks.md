@@ -187,7 +187,7 @@ OP_DUP OP_HASH160 [公钥哈希] OP_EQUALVERIFY OP_CHECKSIG
 
 对于这个 4 字节的值，
 
-![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0701.png)
+![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0701.png)
 
 - 最高位第 31 位，作为开关，为 `1` 表示 ** 禁用 ** 相对时间锁
 - 第 22 位作为类型标志，为 `1` 指示 ** 多少个 512 秒 **，为 `0` 指示 ** 多少个区块 **

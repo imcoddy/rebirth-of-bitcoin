@@ -200,7 +200,7 @@ P2PKH 地址都以 `1` 开头，P2SH 地址都以 `3` 开头。
 - 从私钥可以计算公钥，从公钥可以计算地址，但反过来都不成立
 - 私钥十分重要，拥有私钥就拥有了其对应公钥上锁定的比特币
 
-![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0401.png)
+![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0401.png)
 
 # 参考
 

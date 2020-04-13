@@ -8,7 +8,7 @@
 
 这些私钥之间彼此独立，毫无关联，意味着你需要经常备份用过的私钥，否则一旦钱包软件不可访问，你的比特币也会石沉大海。
 
-[![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0501.png)](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0501.png)
+[![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0501.png)](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0501.png)
 
 由于在备份和使用时过于麻烦，不确定性钱包已不再被推荐使用，逐渐被确定性钱包取代。
 
@@ -26,7 +26,7 @@
 
 确定性钱包从逻辑上看，是下面的样子。
 
-[![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0502.png)](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0502.png)
+[![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0502.png)](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0502.png)
 
 ## 分层确定性钱包
 
@@ -47,7 +47,7 @@
 
 基于树形结构，HD 钱包的一个父密钥可以衍生出一系列子密钥，每个子密钥又可以继续衍生出一系列孙密钥，依次类推无限衍生下去，就像下图所示的样子。
 
-[![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0503.png)](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0503.png)
+[![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0503.png)](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0503.png)
 
 现在主流的钱包软件基本都是兼容 [BIP-32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)、[BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) 和 [BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) 的 HD 钱包。
 

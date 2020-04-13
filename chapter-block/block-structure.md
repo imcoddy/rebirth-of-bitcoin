@@ -82,7 +82,7 @@ Merkle 树是一棵二叉树，用于 ** 归纳 ** 一个区块中的所有交�
 
 Merkle 树会生成 ** 整个交易集合的数字指纹 **，形如
 
-![merkle-tree](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0903.png)
+![merkle-tree](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0903.png)
 
 交易会被放在 Merkle 树最底层的叶子节点上，如图所示，如果交易的个数是奇数，会复制最后一笔交易补齐，其中：
 
@@ -97,7 +97,7 @@ Merkle 树将区块头和区块中的交易关联了起来，如果区块中的�
 
 使用 Merkle 树的另一个好处是，它提供了一种校验区块是否存在某笔交易的高效途径。对于下面这棵 Merkle 树，
 
-![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0905.png)
+![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0905.png)
 
 为了证明交易 K 在区块中，可以用 $H_L$、$H_{IJ}$、$H_{MNOP}$ 和 $H_{ABCDEFGH}$ 这四个哈希值构造一条 “Merkle 路径”，只需 128 字节，任何人都可以用这条路径，验证区块包含交易 K。
 

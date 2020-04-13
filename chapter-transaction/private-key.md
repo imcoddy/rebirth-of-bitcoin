@@ -31,7 +31,7 @@ Base58Check 在编码过程中加入了校验和，在最后使用 Base58，是�
 3. 在 S1 后附上 Checksum，得到 S3
 4. 对 S3 做 Base58 编码，得到结果
 
-![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0406.png)
+![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0406.png)
 
 对于不同类型的数据，在做 Base58Check 编码时会添加不同的版本前缀，以产生易于辨识的不同结果。
 
@@ -148,7 +148,7 @@ $$k \times p = \underbrace{p + p + ... + p}\_{k}$$
 
 下图展示了从椭圆曲线上的点 G，计算 2G、4G、8G 的操作。
 
-![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0404.png)
+![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0404.png)
 
 * 注意，为了有直观的理解，图片中的椭圆曲线都是连续的。比特币使用的 Secp256k1 曲线，其图像并不连续，但它们的数学原理是相同的。*
 
@@ -189,7 +189,7 @@ y = 97693d32c540ac253de7a3dc73f7e4ba7b38d2dc1ecc8e07920b496fb107d6b2
 - 如果 Y 坐标的值为偶数，在 X 坐标前添加前缀 `0x02`
 - 如果 Y 坐标的值为奇数，在 X 坐标前添加前缀 `0x03`
 
-<div style="width: 50%; margin: auto">![](https://github.com/bitcoinbook/bitcoinbook/raw/develop/images/mbc2_0407.png)</div>
+<div style="width: 50%; margin: auto">![](https://raw.githubusercontent.com/bitcoinbook/bitcoinbook/develop/images/mbc2_0407.png)</div>
 
 得到压缩格式的公钥为
 
