@@ -1,3 +1,3 @@
-Sitemap: https://rebirth.metanet.press/sitemap.xml
+Sitemap: https://metanet.press/sitemap.xml
 User-agent: *
 Disallow:

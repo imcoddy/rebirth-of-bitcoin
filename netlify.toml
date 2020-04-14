@@ -24,6 +24,6 @@
 
 [[redirects]]
   from = "https://metanet.press"
-  to = "https://rebirth.metanet.press"
+  to = "https://metanet.press/rebirth"
   status = 301
   force = true

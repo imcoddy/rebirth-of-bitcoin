@@ -45,14 +45,15 @@
     "ga",
     "-gitalk",
     "github",
+    "highlight",
     "-image-captions",
     "lightbox",
     "livere",
     "localized-footer",
     "myseo",
     "-pageview-count",
-    "prism",
-    "prism-themes",
+    "-prism",
+    "-prism-themes",
     "robotstxt",
     "search-pro",
     "-sharing-plus",
@@ -70,7 +71,7 @@
       "showLevel": false
     },
     "canonical-link": {
-      "baseURL": "https://rebirth.metanet.press/"
+      "baseURL": "https://metanet.press/rebirth"
     },
     "disqus":{
       "shortName": "imcoddy"
@@ -143,7 +144,7 @@
       ]
     },
     "sitemap-general":{
-      "prefix":"https://rebirth.metanet.press"
+      "prefix":"https://metanet.press/rebirth/"
     },
     "tbfed-pagefooter": {
       "copyright": "©2020 - Metanet.Press",
