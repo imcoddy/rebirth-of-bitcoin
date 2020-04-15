@@ -19,7 +19,7 @@
 
 Bitcoin SV 正在成为中本聪所设计的比特币应有的样子，愿这条路上你也能一起前行。
 
-PS：如果你是在手机上看本网站，记得**使用屏幕左上角的目录和搜索功能来查阅相应章节**哦:)
+PS：如果你是在手机上看本网站，记得**使用屏幕左上角的目录和搜索功能来查阅相应章节**哦：)
 
 邱少贤 [@imcoddy](https://github.com/imcoddy)
 
@@ -31,19 +31,19 @@ PS：如果你是在手机上看本网站，记得**使用屏幕左上角的目�
 
 如果您认为本项目有用乐意捐赠，可以捐赠至以下地址。捐赠的币将用于奖励本项目的贡献者。
 
-![打赏](/images/donation.png)
+![打赏](/images/donation.png "metanetpress@moneybutton.com")
 ```
-1MzziGBa7tNNzMwVJMPEjAfM1wRcvSGZu5
+1EpJq7XMkbwgSAsJ5raRmohYbYDwPAE4K3
 ```
 
 ## 邱少闲聊
 
 本书将专注于比特币的基本知识科普，内容会相对比较正经严肃，喜欢欢快活跃的，欢迎关注微信公众号【邱少闲聊Metanet】，听我从别的视角讲述比特币的八卦 :)
 
-![邱少闲聊Metanet](/images/metanetchat.png)
+![邱少闲聊Metanet](/images/metanet.press.png)
 
 ## 版权说明
 
 [![Creative Commons License](/images/by-nc-nd.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)
 
-Rebirth of Bitcoin: Back to Genesis 《比特币重生：重返创世纪》一书以 [署名-非商业性使用-禁止演绎 4.0 国际 (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)  的许可协议发布，并预计于 2021 年前(即 Bitcoin SV 的 「[创世纪](https://bitcoinsv.io/2019/04/17/the-roadmap-to-genesis-part-1/)」升级后的一年之内)以 [署名-相同方式共享 4.0 国际 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)  方式开放许可授权。
+Rebirth of Bitcoin: Back to Genesis 《比特币重生：重返创世纪》一书以 [署名 - 非商业性使用 - 禁止演绎 4.0 国际 (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)  的许可协议发布，并预计于 2021 年前（即 Bitcoin SV 的 「[创世纪](https://bitcoinsv.io/2019/04/17/the-roadmap-to-genesis-part-1/)」升级后的一年之内）以 [署名 - 相同方式共享 4.0 国际 (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)  方式开放许可授权。
