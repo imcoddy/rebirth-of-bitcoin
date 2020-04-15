@@ -54,7 +54,7 @@
     "-pageview-count",
     "-prism",
     "-prism-themes",
-    "robotstxt",
+    "-robotstxt",
     "search-pro",
     "-sharing-plus",
     "sitemap-general",

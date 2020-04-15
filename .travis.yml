@@ -40,9 +40,9 @@ script:
 
 # 发布静态文件
 after_script:
+    - cp robots.txt _book/
     - cp -r _book rebirth
     - mv rebirth _book/
-    - cp robots.txt _book/
     - cd ./_book
     - git init
     - git config user.name "imcoddy"
@@ -52,7 +52,6 @@ after_script:
     - git commit -m "Update GitBook By TravisCI With Build $TRAVIS_BUILD_NUMBER"
     - git remote add origin https://${REPO}
     - git push --force --quiet "https://${GH_TOKEN}@${REPO}" master:gh-pages
-
 
 # 环境变量
 env:
