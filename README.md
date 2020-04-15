@@ -31,7 +31,7 @@ PS：如果你是在手机上看本网站，记得**使用屏幕左上角的目�
 
 如果您认为本项目有用乐意捐赠，可以捐赠至以下地址。捐赠的币将用于奖励本项目的贡献者。
 
-![打赏](/images/donation.png "metanetpress@moneybutton.com")
+[![打赏 metanetpress@moneybutton.com](/images/donation.png "metanetpress@moneybutton.com")](bitcoin:1EpJq7XMkbwgSAsJ5raRmohYbYDwPAE4K3)
 ```
 1EpJq7XMkbwgSAsJ5raRmohYbYDwPAE4K3
 ```
