@@ -23,7 +23,7 @@
   compress = true
 
 [[redirects]]
-  from = "https://metanet.press"
-  to = "https://metanet.press/rebirth"
+  from = "https://metanet.press/"
+  to = "https://metanet.press/rebirth/"
   status = 301
   force = true
