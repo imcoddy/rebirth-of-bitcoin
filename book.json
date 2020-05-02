@@ -48,7 +48,7 @@
     "highlight",
     "-image-captions",
     "lightbox",
-    "livere",
+    "-livere",
     "localized-footer",
     "myseo",
     "-pageview-count",
@@ -60,7 +60,8 @@
     "sitemap-general",
     "splitter",
     "-tbfed-pagefooter",
-    "theme-comscore"
+    "theme-comscore",
+    "valine"
   ],
   "pluginsConfig": {
     "prism": {
@@ -154,6 +155,10 @@
     },
     "theme-default": {
       "showLevel": true
+    },
+    "valine": {
+      "appId": "cOEhusjIvF2miHty5CGF9tXD-MdYXbMMI",
+      "appKey": "Yzbo1Aw1oSMT6cjGi6nLe9k0"
     }
   },
   "title": "比特币重生计划：重返创世纪 | Metanet.Press",
