@@ -3,8 +3,8 @@
   padding: 0px;
 }
 .header-inner .title {
-  font-size: 1.83rem;
-  font-weight: bold;
+  font-size: 2.25rem;
+  font-weight: 900;
 }
 .page-inner {
   max-width: 800px;
@@ -12,8 +12,4 @@
 }
 .header-inner #book-search-input {
   background: #e8b21f;
-}
-.header-inner #book-search-input #searchBtn {
-  color: #ffffff;
-  margin: 0 20px;
 }
