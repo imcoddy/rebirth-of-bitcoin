@@ -156,10 +156,11 @@
       "showLevel": true
     },
     "theme-hqbook": {
-      "favicon": "./images/favicon.png",
-      "logo": "./images/favicon.png",
-      "search-placeholder": "搜索下试试",
+      "favicon": "https://metanet.press/rebirth/images/favicon.png",
+      "logo": "https://metanet.press/rebirth/images/favicon.png",
+      "search-placeholder": "搜索一下",
       "hide-elements": [
+        ".book-anchor",
         ".summary .gitbook-link",
         ".vpower.txt-right"
       ]
@@ -177,7 +178,7 @@
     "themeHqbook": {
       "nav": [{
         "url": "https://metanet.press",
-        "name": "首页"
+        "name": "返回首页"
       }]
     }
   }
