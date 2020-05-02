@@ -47,8 +47,8 @@
     "github",
     "highlight",
     "-image-captions",
-    "lightbox",
-    "-livere",
+    "-lightbox",
+    "valine",
     "localized-footer",
     "myseo",
     "-pageview-count",
@@ -60,8 +60,8 @@
     "sitemap-general",
     "splitter",
     "-tbfed-pagefooter",
-    "theme-comscore",
-    "valine"
+    "-theme-comscore",
+    "theme-hqbook"
   ],
   "pluginsConfig": {
     "prism": {
@@ -74,7 +74,7 @@
     "canonical-link": {
       "baseURL": "https://metanet.press/rebirth"
     },
-    "disqus":{
+    "disqus": {
       "shortName": "imcoddy"
     },
     "donate": {
@@ -99,16 +99,13 @@
       "types": ["star", "watch", "fork"],
       "size": "small"
     },
-    "localized-footer":{
+    "localized-footer": {
       "filename": "./FOOTER.md"
-    },
-    "livere": {
-      "uid": "MTAyMC80Njk4NS8yMzQ4NQ=="
     },
     "myseo": {
       "titlePrefix": "",
       "titleSuffix": "|「比特币重生计划：重返创世纪」Metanet.Press",
-      "keywords": "Metanet,Metanet.Press,Metanet Press,BSV,邱少闲聊,邱少贤,邱少贤撩Metanet,邱少闲聊Metanet,BSV社区,BitcoinSV社区,BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,Satoshi,Craig,CSW,比特币现金,比特币SV,区块链,中本聪愿景"
+      "keywords": "Metanet,Metanet.Press,Metanet Press,BSV, 邱少闲聊，邱少贤，邱少贤撩Metanet, 邱少闲聊Metanet,BSV社区，BitcoinSV社区，BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,Satoshi,Craig,CSW,比特币现金,比特币SV, 区块链，中本聪愿景"
     },
     "sharing": {
       "douban": true,
@@ -143,8 +140,8 @@
         "whatsapp"
       ]
     },
-    "sitemap-general":{
-      "prefix":"https://metanet.press/rebirth/",
+    "sitemap-general": {
+      "prefix": "https://metanet.press/rebirth/",
       "changefreq": "daily",
       "priority": 0.7
     },
@@ -156,11 +153,31 @@
     "theme-default": {
       "showLevel": true
     },
+    "theme-hqbook": {
+      "favicon": "/images/favicon.png",
+      "logo": "/images/logo.png",
+      "search-placeholder": "搜索下试试",
+      "hide-elements": [
+        ".summary .gitbook-link",
+        ".vpower.txt-right"
+      ]
+    },
     "valine": {
       "appId": "cOEhusjIvF2miHty5CGF9tXD-MdYXbMMI",
-      "appKey": "Yzbo1Aw1oSMT6cjGi6nLe9k0"
+      "appKey": "Yzbo1Aw1oSMT6cjGi6nLe9k0",
+      "placeholder": "看官，留个言吧",
+      "avatar": "identicon",
+      "lang": "zh-CN"
     }
   },
   "title": "比特币重生计划：重返创世纪 | Metanet.Press",
-  "variables": {}
+  "variables": {
+    "themeHqbook": {
+      "nav": [{
+        "url": "https://www.google.com",
+        "target": "_blank",
+        "name": ""
+      }]
+    }
+  }
 }
