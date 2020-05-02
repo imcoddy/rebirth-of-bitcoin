@@ -156,8 +156,8 @@
       "showLevel": true
     },
     "theme-hqbook": {
-      "favicon": "/images/favicon.png",
-      "logo": "/images/logo.png",
+      "favicon": "./images/favicon.png",
+      "logo": "./images/favicon.png",
       "search-placeholder": "搜索下试试",
       "hide-elements": [
         ".summary .gitbook-link",
