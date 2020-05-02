@@ -36,11 +36,13 @@
     "-anchor-navigation-ex",
     "alerts",
     "auto-scroll-table",
-    "chapter-fold",
     "canonical-link",
+    "chapter-fold",
+    "code",
     "-disqus",
     "-donate",
     "favicon",
+    "flexible-alerts",
     "expandable-chapters",
     "ga",
     "-gitalk",
@@ -97,7 +99,7 @@
     "github-buttons": {
       "repo": "https://github.com/imcoddy/rebirth-of-bitcoin",
       "types": ["star", "watch", "fork"],
-      "size": "small"
+      "size": "large"
     },
     "localized-footer": {
       "filename": "./FOOTER.md"
@@ -174,9 +176,8 @@
   "variables": {
     "themeHqbook": {
       "nav": [{
-        "url": "https://www.google.com",
-        "target": "_blank",
-        "name": ""
+        "url": "https://metanet.press",
+        "name": "首页"
       }]
     }
   }
