@@ -150,3 +150,4 @@
     * [中本聪时间线](appendix/time-line-of-satoshi.md)
     * [BitcoinSV 常见问题](appendix/faq-of-bsv.md)
     * [比特币白皮书](appendix/bitcoin-whitepaper.md)
+    * [编写指南](appendix/guide.md)
