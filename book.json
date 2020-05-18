@@ -105,8 +105,8 @@
     },
     "myseo": {
       "titlePrefix": "",
-      "titleSuffix": "|「比特币重生计划：重返创世纪」Metanet.Press",
-      "keywords": "Metanet,Metanet.Press,Metanet Press,BSV, 邱少闲聊，邱少贤，邱少贤撩Metanet, 邱少闲聊Metanet,BSV社区，BitcoinSV社区，BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,Satoshi,Craig,CSW,比特币现金,比特币SV, 区块链，中本聪愿景"
+      "titleSuffix": " |「比特币重生计划：重返创世纪」Metanet.Press",
+      "keywords": "Metanet,Metanet.Press,Metanet Press,BSV,邱少闲聊,邱少贤,邱少贤撩Metanet,邱少闲聊Metanet,BSV社区,BitcoinSV社区,BitcoinSV,BTC,BCH,Bitcoin,SvSkull,骷髅会,比特币,Satoshi,Craig,CSW,比特币现金,比特币SV,区块链,中本聪愿景,BSV是什么,比特币是什么"
     },
     "sharing": {
       "douban": true,
@@ -119,7 +119,7 @@
       "messenger": false,
       "pocket": true,
       "qq": true,
-      "qzone": false,
+      "qzone": true,
       "stumbleupon": false,
       "twitter": true,
       "viber": false,
