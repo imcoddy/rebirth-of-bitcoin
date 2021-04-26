@@ -1,0 +1,29 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "max-age=63072000"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+
+# If skip_processing = true, all other settings are ignored
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
+[[redirects]]
+  from = "https://metanet.press/"
+  to = "https://metanet.press/rebirth/"
+  status = 301
+  force = true

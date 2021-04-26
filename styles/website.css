@@ -1,0 +1,15 @@
+.header-inner{
+  height: auto;
+  padding: 0px;
+}
+.header-inner .title {
+  font-size: 2.25rem;
+  font-weight: 900;
+}
+.page-inner {
+  max-width: 800px;
+  padding:20px 15px 40px 15px;
+}
+.header-inner #book-search-input {
+  background: #e8b21f;
+}
