@@ -166,7 +166,6 @@ BSV 上面的发展日新月异，得益于底层协议维持不变的预期，�
 首先，请持续保持一份开放的学习心态，因为你以前所接触到的比特币和区块链的信息，可能全是错误的 :)
 
 * 如果你刚接触 BSV，建议先将 <https://imcoddy.github.io/bitcoin-cash-note/archives/> 上的文章按顺序全看一遍，明白 BSV 支持者支持的原因
-* 如果你想更系统地了解 BSV 的相关知识，欢迎访问 <http://1bsv.cn/> <https://bitsv.club/> 等网站的精华帖子
-* 如果你想更深入探讨 BSV 的各种潜力，欢迎围观 BitcoinSV 骷髅会 <https://svskull.club/> 网站。
+* 如果你想更系统地了解 BSV 的相关知识，欢迎访问 <https://bitcoinassociation.net/bitcoin-sv-webinars/>
 
 我们欢迎各类 builder 加入 BSV 这个全新的舞台来充分展示自己的实力 :P
